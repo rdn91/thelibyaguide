@@ -1,0 +1,1260 @@
+[
+  {
+    "slug": "leptis-magna",
+    "nameEn": "Leptis Magna (Lubda)",
+    "nameAr": "لبدة الكبرى",
+    "region": "tripolitania",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Al Khums",
+    "cityAr": "الخمس",
+    "coordinates": {
+      "lat": 32.6392,
+      "lng": 14.2906
+    },
+    "era": "Phoenician & Roman Empire (7th c. BCE - 3rd c. CE)",
+    "summaryEn": "One of the most pristine and sprawling Roman archaeological complexes in the world, featuring the Arch of Septimius Severus, the Severan Basilica, and a massive seaside amphitheatre.",
+    "summaryAr": "درة شمال أفريقيا الرومانية ومسقط رأس الإمبراطور سيبتيموس سيفيروس. تعد لبدة الكبرى الموقع الروماني الأكثر اكتمالاً في حوض البحر الأبيض المتوسط، وتضم قوس النصر، وحمامات هادريان، والبازيليكا السيفيرية، ومسرحاً ضخماً مطلاً على البحر.",
+    "highlightsEn": [
+      "Arch of Septimius Severus with intricate limestone relief carvings",
+      "Hadrianic Baths with preserved hypocaust underground heating systems",
+      "Severan Basilica & Forum adorned with Gorgon Medusa medallions",
+      "16,000-seat amphitheater with panoramic Mediterranean horizon views"
+    ],
+    "highlightsAr": [
+      "قوس سيبتيموس سيفيروس ذو النقوش الحجرية البديعة",
+      "حمامات هادريان ذات أنظمة التدفئة الأرضية المحفوظة بالكامل",
+      "بازيليكا سيفيروس وساحة الفوروم المزينة برؤوس الميدوزا المنحوتة",
+      "المسرح الروماني الذي يتسع لـ 16,000 متفرج بإطلالة ساحرة على المتوسط"
+    ],
+    "bestSeasonEn": "October to April (Mild Mediterranean breeze, 18-24°C)",
+    "bestSeasonAr": "من أكتوبر إلى أبريل (طقس معتدل 18-24 مئوية)",
+    "distanceEn": "120 km from Tripoli (90 mins)",
+    "distanceAr": "120 كم شرق طرابلس (90 دقيقة)",
+    "unesco": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Leptis_Magna",
+    "image": {
+      "src": "/images/sights/leptis-magna.jpg",
+      "width": 2000,
+      "height": 1333,
+      "author": "joepyrek from Richmond, Va, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leptis_Magna_(29)_(8288918733).jpg"
+    }
+  },
+  {
+    "slug": "sabratha",
+    "nameEn": "Ruins of Sabratha",
+    "nameAr": "آثار صبراتة الرومانية",
+    "region": "tripolitania",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Sabratha",
+    "cityAr": "صبراتة",
+    "coordinates": {
+      "lat": 32.7922,
+      "lng": 12.4842
+    },
+    "era": "Phoenician & Roman (500 BCE - 4th c. CE)",
+    "summaryEn": "An ancient Phoenician trading post turned Roman city, celebrated for its iconic three-story, 96-column theater backdrop overlooking the Mediterranean Sea.",
+    "summaryAr": "تشتهر بمسرحها الروماني الأسطوري ذي الأعمدة الوردية ثلاثية الطوابق المنتصبة قبالة أمواج البحر الأبيض المتوسط. نشأت كمركز تجاري فينيقي ثم ازدهرت في العهد الروماني، وتضم معابد إيزيس وسيرابيس وحمامات الفسيفساء.",
+    "highlightsEn": [
+      "Iconic 3-tier Roman Theater scaenae frons with 108 Corinthian marble columns",
+      "Temple of Isis directly overlooking turquoise Mediterranean breakers",
+      "Seaside Christian Byzantine basilica with preserved polychrome mosaics",
+      "Archaeological museum with Roman maritime amphorae and sculptures"
+    ],
+    "highlightsAr": [
+      "واجهة المسرح الروماني المكونة من أعمدة كورنثية رخامية",
+      "معبد إيزيس المطل مباشرة على زرقة البحر",
+      "البازيليكا البيزنطية ذات الأرضيات الفسيفسائية الملونة",
+      "المتحف الأثري الذي يضم تماثيل رخامية نادرة وجراراً رومانية بحرية"
+    ],
+    "bestSeasonEn": "September to May",
+    "bestSeasonAr": "من سبتمبر إلى مايو",
+    "distanceEn": "70 km West of Tripoli (60 mins)",
+    "distanceAr": "70 كم غرب طرابلس (60 دقيقة)",
+    "unesco": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Sabratha",
+    "image": {
+      "src": "/images/sights/sabratha.jpg",
+      "width": 1551,
+      "height": 826,
+      "author": "See Commons file page",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theatre_of_Sabratha,_Libya.jpg"
+    }
+  },
+  {
+    "slug": "cyrene",
+    "nameEn": "Cyrene (Shahat)",
+    "nameAr": "قورينا (شحات الأثرية)",
+    "region": "cyrenaica",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Shahat",
+    "cityAr": "شحات",
+    "coordinates": {
+      "lat": 32.8225,
+      "lng": 21.8625
+    },
+    "era": "Classical Greece & Hellenistic (631 BCE - Roman period)",
+    "summaryEn": "One of the greatest ancient Greek cities in the Mediterranean, perched high in the hills of Cyrenaica with massive temples dedicated to Apollo and Zeus.",
+    "summaryAr": "إحدى أعظم المدن الإغريقية القديمة في حوض البحر الأبيض المتوسط، تحتل موقعاً مرتفعاً في هضاب الجبل الأخضر وتضم معابد هائلة لأبولو وزيوس ونوافير مائية عذبة منحوتة في الصخر.",
+    "highlightsEn": [
+      "Sanctuary of Apollo with natural freshwater spring bubbling from limestone cavern",
+      "Colossal Temple of Zeus, architecturally larger than the Parthenon in Athens",
+      "Valley-edge Greek Theatre converted into Roman amphitheater",
+      "Extensive ancient Necropolis carved into green terraced hillsides"
+    ],
+    "highlightsAr": [
+      "مزار الإله أبولو مع النبع الطبيعي المتدفق من كهف صخري",
+      "معبد زيوس الضخم الذي يفوق في مساحته معبد البارثينون في أثينا",
+      "المسرح الإغريقي المشرف على الوادي الأخضر والبحر",
+      "المقابر الملكية الصخرية المنحوتة في سفوح الجبل"
+    ],
+    "bestSeasonEn": "Year-round (Spring March–May features emerald green carpet of wildflowers)",
+    "bestSeasonAr": "على مدار العام (الربيع من مارس إلى مايو يتميز باخضرار السفوح والأزهار البرية)",
+    "distanceEn": "220 km from Benghazi (3 hrs)",
+    "distanceAr": "220 كم شرق بنغازي (3 ساعات)",
+    "unesco": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Cyrene,_Libya",
+    "image": {
+      "src": "/images/sights/cyrene.jpg",
+      "width": 1280,
+      "height": 1024,
+      "author": "Maher27777",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyrene8.jpg"
+    }
+  },
+  {
+    "slug": "apollonia",
+    "nameEn": "Apollonia (Sousa)",
+    "nameAr": "أبولونيا (سوسة البحرية)",
+    "region": "cyrenaica",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Sousa",
+    "cityAr": "سوسة",
+    "coordinates": {
+      "lat": 32.9019,
+      "lng": 21.9697
+    },
+    "era": "Greek & Byzantine (6th c. BCE - 7th c. CE)",
+    "summaryEn": "The ancient port city of Cyrene, famous for its Byzantine basilicas and ancient harbor structures partially submerged along the Mediterranean shoreline.",
+    "summaryAr": "الميناء البحري التاريخي لمدينة قورينا الإغريقية، يشتهر ببازيليكياته البيزنطية وأرصفة مينائه القديم الغارقة جزئياً تحت المياه الفيروزية للبحر الأبيض المتوسط.",
+    "highlightsEn": [
+      "Byzantine Palace and seaside basilica with green cipollino marble columns",
+      "Submerged ancient harbor structures popular with marine archaeology researchers",
+      "Cliffside Greek theatre carved directly against coastal breakers"
+    ],
+    "highlightsAr": [
+      "القصر البيزنطي والكنائس البحرية ذات الأعمدة الرخامية الخضراء",
+      "حوض الميناء الغارق قبالة الشاطئ لعلماء الآثار البحرية",
+      "المسرح الصخري المشرف مباشرة على أمواج البحر"
+    ],
+    "bestSeasonEn": "May to October (Perfect for seaside walks and swimming)",
+    "bestSeasonAr": "من مايو إلى أكتوبر (مثالي للسباحة والمشي البحري)",
+    "distanceEn": "240 km from Benghazi (3.5 hrs)",
+    "distanceAr": "240 كم شرق بنغازي (3.5 ساعات)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Apollonia_(Cyrenaica)",
+    "image": {
+      "src": "/images/sights/apollonia.jpg",
+      "width": 1728,
+      "height": 1164,
+      "author": "Ursus",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apollonia_portoriental.jpg"
+    }
+  },
+  {
+    "slug": "ptolemais",
+    "nameEn": "Ptolemais (Tolmeitha)",
+    "nameAr": "بطلميثة (طلميثة الأثرية)",
+    "region": "cyrenaica",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Tolmeitha",
+    "cityAr": "طلميثة",
+    "coordinates": {
+      "lat": 32.7069,
+      "lng": 20.9529
+    },
+    "era": "Ptolemaic & Roman (3rd c. BCE - 6th c. CE)",
+    "summaryEn": "A major Greco-Roman capital city along the eastern coast featuring monumental subterranean water cisterns and the Villa of the Columns.",
+    "summaryAr": "إحدى عواصم إقليم المدن الخمس (البنتابوليس) التاريخية، تضم صهاريج مياه رومانية ضخمة تحت الأرض وقصر الأعمدة وبوابات أثرية شاهقة.",
+    "highlightsEn": [
+      "Monumental underground Roman water cisterns with vaulted ceilings",
+      "The celebrated Villa of the Columns with intact peristyle courtyard",
+      "Triumphal Arch of Constantine and Hellenistic odeon"
+    ],
+    "highlightsAr": [
+      "صهاريج المياه الرومانية العظيمة ذات الأسقف المقببة",
+      "قصر الأعمدة المشهور بفنائه المعمد الرائع",
+      "قوس النصر ومسرح الأوديون الهيلينستي"
+    ],
+    "bestSeasonEn": "September to May",
+    "bestSeasonAr": "من سبتمبر إلى مايو",
+    "distanceEn": "110 km from Benghazi (90 mins)",
+    "distanceAr": "110 كم شرق بنغازي (90 دقيقة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ptolemais,_Cyrenaica",
+    "image": {
+      "src": "/images/sights/ptolemais.jpg",
+      "width": 1537,
+      "height": 1056,
+      "author": "Munsha'at al Akhdar lil Alwan, Benghazi.",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tolmeitha_ruins.jpg"
+    }
+  },
+  {
+    "slug": "tocra",
+    "nameEn": "Tocra (Taucheira)",
+    "nameAr": "توكرة الأثرية (توخيرا)",
+    "region": "cyrenaica",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Tocra",
+    "cityAr": "توكرة",
+    "coordinates": {
+      "lat": 32.5322,
+      "lng": 20.5722
+    },
+    "era": "Greek & Byzantine (6th c. BCE - 7th c. CE)",
+    "summaryEn": "An ancient Greek colony and later Byzantine fortress on the Cyrenaican coast with surviving defensive stone walls and sea-facing remnants.",
+    "summaryAr": "مستوطنة إغريقية عريقة وحصن بيزنطي منيع على ساحل برقة، لا تزال أسوارها الدفاعية الضخمة وبواباتها وبقاياها البحرية قائمة حتى اليوم.",
+    "highlightsEn": [
+      "Massive Byzantine defensive stone fortification perimeter",
+      "Ancient sea-facing bastions and sanctuary inscriptions",
+      "Archaeological excavation museum with Greek archaic pottery"
+    ],
+    "highlightsAr": [
+      "السور البيزنطي الضخم وأبراج المراقبة الحجرية",
+      "المعالم البحرية والنقوش اليونانية القديمة",
+      "المتحف الأثري الذي يضم أواني فخارية أرخية نادرة"
+    ],
+    "bestSeasonEn": "Year-round",
+    "bestSeasonAr": "على مدار العام",
+    "distanceEn": "65 km from Benghazi (50 mins)",
+    "distanceAr": "65 كم شرق بنغازي (50 دقيقة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Tocra",
+    "image": {
+      "src": "/images/sights/tocra.jpg",
+      "width": 2000,
+      "height": 1500,
+      "author": "Maher A. A. Abdussalam",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tocra1.JPG"
+    }
+  },
+  {
+    "slug": "villa-silin",
+    "nameEn": "Villa Silin",
+    "nameAr": "فيلا سيلين الرومانية",
+    "region": "tripolitania",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Al Khums",
+    "cityAr": "الخمس",
+    "coordinates": {
+      "lat": 32.65,
+      "lng": 14.25
+    },
+    "era": "Roman Empire (2nd century CE)",
+    "summaryEn": "A lavish 2nd-century Roman seaside country estate near Khoms preserving vibrant, intact floor mosaics depicting gladiators, chariot races, and marine life.",
+    "summaryAr": "قصر ريفي روماني باذخ يعود للقرن الثاني الميلادي قرب الخمس، يضم أروع لوحات الفسيفساء الأرضية الكاملة التي تصور صيد البحر، ومصارعة المجالدين، وسباق العربات الحربية.",
+    "highlightsEn": [
+      "World-class Roman polychrome mosaics preserved in situ",
+      "Private seaside Roman thermal bath suite and cold plunge pools",
+      "Intact fresco wall paintings of mythological nymphs and seasons"
+    ],
+    "highlightsAr": [
+      "فسيفساء ملونة فريدة من نوعها عالمياً محفوظة في موقعها الأصلي",
+      "جناح الحمامات الرومانية الخاصة المطلة على شاطئ البحر",
+      "جداريات جصية ملونة تجسد فصول السنة والحوريات الأسطورية"
+    ],
+    "bestSeasonEn": "October to April",
+    "bestSeasonAr": "من أكتوبر إلى أبريل",
+    "distanceEn": "115 km from Tripoli (80 mins)",
+    "distanceAr": "115 كم شرق طرابلس (80 دقيقة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Villa_Silin",
+    "image": null
+  },
+  {
+    "slug": "tadrart-acacus",
+    "nameEn": "Tadrart Acacus (Jabal Acacus)",
+    "nameAr": "تادرارت أكاكوس الصخري",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Ghat",
+    "cityAr": "غات",
+    "coordinates": {
+      "lat": 24.8333,
+      "lng": 10.3333
+    },
+    "era": "Prehistoric / Neolithic (12,000 BCE - 100 CE)",
+    "summaryEn": "A UNESCO desert mountain range filled with dramatic wind-sculpted rock arches and rock art dating back thousands of years.",
+    "summaryAr": "سلسلة جبال صحراوية مصنفة ضمن التراث العالمي لليونسكو، تشتهر بأقواسها الصخرية الطبيعية ونقوشها الصخرية الاستثنائية التي تعود لأكثر من 12,000 عام.",
+    "highlightsEn": [
+      "Natural rock arches spanning towering red sandstone massifs",
+      "Thousands of rock art paintings depicting ancient Saharan wildlife and giraffes",
+      "Unsurpassed deep desert stargazing with zero light pollution"
+    ],
+    "highlightsAr": [
+      "أقواس صخرية طبيعية معلقة بين كتل الحجر الرملي الحمراء",
+      "آلاف الرسومات الجدارية التي تصور الحياة القديمة والزرافات في الصحراء الخضراء",
+      "أجواء فلكية ساحرة ورصد للنجوم والمجرات بانعدام كامل للتلوث الضوئي"
+    ],
+    "bestSeasonEn": "November to March (Cool desert days, crisp stargazing nights)",
+    "bestSeasonAr": "من نوفمبر إلى مارس (أجواء شتوية صحراوية معتدلة وليال باردة)",
+    "distanceEn": "1,350 km from Tripoli (Domestic flight to Ghat TIP-GHT)",
+    "distanceAr": "1,350 كم جنوب طرابلس (يوصى برحلة طيران إلى غات)",
+    "unesco": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Acacus_Mountains",
+    "image": {
+      "src": "/images/sights/tadrart-acacus.jpg",
+      "width": 1280,
+      "height": 960,
+      "author": "Roberto D'Angelo (roberdan)",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tadrart_Acacus_1.jpg"
+    }
+  },
+  {
+    "slug": "gaberoun",
+    "nameEn": "Gaberoun (Gabr Oun)",
+    "nameAr": "بحيرة قبر عون الأسطورية",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Ubari",
+    "cityAr": "أوباري",
+    "coordinates": {
+      "lat": 26.8031,
+      "lng": 13.5353
+    },
+    "era": "Traditional Saharan Oasis Community",
+    "summaryEn": "An oasis lake tucked deep among the towering red dunes of the Idehan Ubari desert, surrounded by palm groves and abandoned village huts.",
+    "summaryAr": "بحيرة مياه مالحة دافئة تختبئ بين الكثبان الرملية الذهبية الشاهقة في بحر رمال أوباري، تحيط بها واحات النخيل وأطلال القرية الطينية القديمة.",
+    "highlightsEn": [
+      "Hyper-saline warm waters where bathers float effortlessly like the Dead Sea",
+      "Towering 100-meter golden sand dunes offering world-class sandboarding",
+      "Traditional Tuareg camp hospitality and mint tea over acacia embers"
+    ],
+    "highlightsAr": [
+      "مياه شديدة الملوحة والحرارة تجعل السابح يطفو بسهولة تامة كالبحر الميت",
+      "كثبان رملية شاهقة بارتفاع يتجاوز 100 متر مثالية للتزلج على الرمال",
+      "جلسات شاي الطوارق بالرغوة الغنية حول مواقد الحطب ليلاً"
+    ],
+    "bestSeasonEn": "October to April",
+    "bestSeasonAr": "من أكتوبر إلى أبريل",
+    "distanceEn": "980 km from Tripoli (or flight to Sebha, then 150 km 4WD)",
+    "distanceAr": "980 كم من طرابلس (أو رحلة طيران إلى سبها ثم دفع رباعي)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Gaberoun",
+    "image": {
+      "src": "/images/sights/gaberoun.jpg",
+      "width": 1024,
+      "height": 768,
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Gaberoun_(5282881127).jpg"
+    }
+  },
+  {
+    "slug": "ghadames",
+    "nameEn": "Ghadames Old Town",
+    "nameAr": "مدينة غدامس القديمة (لؤلؤة الصحراء)",
+    "region": "tripolitania",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Ghadames",
+    "cityAr": "غدامس",
+    "coordinates": {
+      "lat": 30.1333,
+      "lng": 9.5
+    },
+    "era": "Berber & Trans-Saharan Trade (Ancient - Ottoman)",
+    "summaryEn": "Nicknamed the \"Pearl of the Desert,\" this UNESCO-listed mudbrick oasis city is celebrated for its covered, cooling alleyways and rooftop terraces.",
+    "summaryAr": "تلقب بـ \"لؤلؤة الصحراء\"، وهي مدينة واحات تاريخية مسجلة على لائحة اليونسكو، تتميز بشوارعها المسقوفة الباردة ومنازلها الطينية البيضاء وشبكات المياه التقليدية.",
+    "highlightsEn": [
+      "Ingenious multi-level urban architecture separating pedestrian traffic from rooftop domestic life",
+      "Intricately painted whitewashed interiors adorned with mirrors and Berber brass lanterns",
+      "Ain Al-Faras natural spring channel irrigation clock system"
+    ],
+    "highlightsAr": [
+      "هندسة معمارية عبقرية تفصل ممرات المشاة المظللة عن أسطح المنازل",
+      "غرف استقبال طينية فاخرة مزينة بالمرايا النحاسية والزخارف الأمازيغية",
+      "عين الفرس ونظام توزيع المياه التاريخي المحكم بالدقائق"
+    ],
+    "bestSeasonEn": "October to April",
+    "bestSeasonAr": "من أكتوبر إلى أبريل",
+    "distanceEn": "600 km South-West of Tripoli (6.5 hrs)",
+    "distanceAr": "600 كم جنوب غرب طرابلس (طريق معبد عبر نالوت)",
+    "unesco": true,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ghadames",
+    "image": {
+      "src": "/images/sights/ghadames.jpg",
+      "width": 800,
+      "height": 600,
+      "author": "See Commons file page",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghadames_Mosque.jpg"
+    }
+  },
+  {
+    "slug": "waw-an-namus",
+    "nameEn": "Waw an Namus",
+    "nameAr": "واو الناموس البركاني",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Murzuk",
+    "cityAr": "مرزق",
+    "coordinates": {
+      "lat": 24.9175,
+      "lng": 17.7628
+    },
+    "era": "Quaternary Geological Volcanism",
+    "summaryEn": "An extinct volcanic caldera in the remote southern desert surrounded by dark black basalt ash and multiple colorful mineral lakes.",
+    "summaryAr": "فوهة بركانية خامدة في أقصى الجنوب الليبي، محاطة بهالة من الرماد البازلتي الأسود تمتد لعشرات الكيلومترات وبداخلها واحة مذهلة تضم بحيرات ملونة كلوحة سريالية.",
+    "highlightsEn": [
+      "Striking dark volcanic ash field forming a 10–20 km black circle on golden Saharan sands",
+      "Central caldera containing 3 colorful mineral-rich salt lakes and reed vegetation",
+      "One of the most surreal geological landscapes on Earth"
+    ],
+    "highlightsAr": [
+      "دائرة بازلتية بركانية سوداء بقطر يتجاوز 15 كم وسط الرمال الذهبية",
+      "فوهة بركانية تحتضن ثلاث بحيرات ملونة تنمو حولها نباتات القصب والنخيل",
+      "من أكثر الظواهر الجيولوجية إبهاراً وندرة على سطح كوكب الأرض"
+    ],
+    "bestSeasonEn": "December to February",
+    "bestSeasonAr": "من ديسمبر إلى فبراير",
+    "distanceEn": "Remote Sahara expedition (Requires 4WD convoy)",
+    "distanceAr": "أقصى جنوب الصحراء (يتطلب قافلة استكشافية متكاملة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Waw_an_Namus",
+    "image": {
+      "src": "/images/sights/waw-an-namus.jpg",
+      "width": 2000,
+      "height": 1500,
+      "author": "StFr",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Waw_an-Namus-Zentrum.jpg"
+    }
+  },
+  {
+    "slug": "mandara-mafo-lakes",
+    "nameEn": "Mandara & Mafo Lakes",
+    "nameAr": "بحيرات المندرة ومافو",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Ubari",
+    "cityAr": "أوباري",
+    "coordinates": {
+      "lat": 26.75,
+      "lng": 13.4167
+    },
+    "era": "Fezzan Desert Hydrology",
+    "summaryEn": "Dramatic hyper-saline lakes in the Ubari sand sea framed by steep dunes, creating reflective desert waters.",
+    "summaryAr": "سلسلة بحيرات صحراوية براقة تتلألأ وسط كثبان بحر رمال أوباري، تعكس زرقة السماء على مياهها المحاطة بأشجار النخيل الباسقة.",
+    "highlightsEn": [
+      "Pristine crystal desert reflections against sheer 80m sand dunes",
+      "Traditional palm groves flourishing despite hyper-saline waters",
+      "Exclusive desert camping under the Milky Way"
+    ],
+    "highlightsAr": [
+      "انعكاسات مائية بديعة على سفوح الكثبان الرملية العالية",
+      "واحات نخيل ناضرة تعانق مياه البحيرات العذرية",
+      "تخييم صحراوي ساحر تحت قبة مجرة درب التبانة"
+    ],
+    "bestSeasonEn": "November to March",
+    "bestSeasonAr": "من نوفمبر إلى مارس",
+    "distanceEn": "Ubari Sand Sea (50 km from Ubari)",
+    "distanceAr": "بحر رمال أوباري (50 كم عن مدينة أوباري)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Idehan_Ubari",
+    "image": {
+      "src": "/images/sights/mandara-mafo-lakes.jpg",
+      "width": 1000,
+      "height": 667,
+      "author": "Jürgen Büttner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Um_el_Ma.jpg"
+    }
+  },
+  {
+    "slug": "murzuk-castle",
+    "nameEn": "Murzuk Castle & Dune Field",
+    "nameAr": "قلعة مرزق التاريخية وبحر الرمال",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Murzuk",
+    "cityAr": "مرزق",
+    "coordinates": {
+      "lat": 25.9,
+      "lng": 13.9
+    },
+    "era": "Ottoman & Trans-Saharan Caravan Era (16th - 19th c.)",
+    "summaryEn": "A key historical trans-Saharan trade caravan hub anchored by an ancient desert fortress on the edge of the Murzuk Sand Sea.",
+    "summaryAr": "عاصمة فزان التاريخية وإحدى أهم محطات قوافل التجارة عبر الصحراء الكبرى، تحتضن قلعة عثمانية طينية مهيبة عند حافة بحر رمال مرزق العظيم.",
+    "highlightsEn": [
+      "Historic mudbrick Murzuk fortress guarding ancient camel caravan trails",
+      "Gateway to the grand Murzuk Sand Sea with towering star dunes",
+      "Rich trans-Saharan cultural history and artisan leather crafts"
+    ],
+    "highlightsAr": [
+      "قلعة مرزق الطينية التاريخية الحارسة لمسارات القوافل القديمة",
+      "بوابة بحر رمال مرزق ذي الكثبان النجمية العملاقة",
+      "تاريخ تجاري عريق وحرف يدوية جلدية تقليدية"
+    ],
+    "bestSeasonEn": "October to March",
+    "bestSeasonAr": "من أكتوبر إلى مارس",
+    "distanceEn": "150 km South of Sebha (2 hrs)",
+    "distanceAr": "150 كم جنوب سبها (ساعتان)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Murzuk",
+    "image": {
+      "src": "/images/sights/murzuk-castle.jpg",
+      "width": 2000,
+      "height": 2667,
+      "author": "Franzfoto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Murzuq_-_Moschee_und_Festung_Qala_at_Turk.jpg"
+    }
+  },
+  {
+    "slug": "wadi-mathendous",
+    "nameEn": "Wadi Mathendous",
+    "nameAr": "وادي متخندوش الصخري",
+    "region": "fezzan",
+    "category": "desert",
+    "access": "expedition",
+    "city": "Messak Settafet",
+    "cityAr": "مساك ستافت",
+    "coordinates": {
+      "lat": 25.7634,
+      "lng": 12.1704
+    },
+    "era": "Neolithic Period (8,000 – 4,000 BCE)",
+    "summaryEn": "A prehistoric open-air gallery in the Messak Settafet plateau displaying Neolithic engravings of elephants, giraffes, crocodiles, and wild cattle.",
+    "summaryAr": "معرض أثري مفتوح في هضبة مساك ستافت، يضم نقوشاً صخرية بديعة من العصر الحجري الحديث تصور الأفيال والزرافات والتماسيح والأبقار الوحشية.",
+    "highlightsEn": [
+      "World-famous lifesize petroglyph of the \"Fighting Cats\" and mammoth elephants",
+      "Empirical proof of the Green Sahara era with water-dependent river animals",
+      "Untouched open-air Neolithic art gallery in raw desert canyon"
+    ],
+    "highlightsAr": [
+      "النقش الصخري الشهير عالمياً للأفيال الضخمة والقطط المتصارعة",
+      "دليل أثري حي على حقبة الصحراء الخضراء ووجود كائنات مائية",
+      "معرض فنون ما قبل التاريخ المحفوظ في الهواء الطلق في الوادي"
+    ],
+    "bestSeasonEn": "November to February",
+    "bestSeasonAr": "من نوفمبر إلى فبراير",
+    "distanceEn": "Messak Plateau (Requires expedition team)",
+    "distanceAr": "هضبة مساك الصخرية (يتطلب فريق استكشاف متخصص)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Wadi_Mathendous",
+    "image": {
+      "src": "/images/sights/wadi-mathendous.jpg",
+      "width": 1280,
+      "height": 960,
+      "author": "ruba_ch/Rudolf Baumann",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mathendous_giraffes.jpg"
+    }
+  },
+  {
+    "slug": "jabal-al-akhdar",
+    "nameEn": "Jabal al Akhdar (The Green Mountain)",
+    "nameAr": "الجبل الأخضر وسلاسله الطبيعية",
+    "region": "cyrenaica",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Al Bayda",
+    "cityAr": "البيضاء",
+    "coordinates": {
+      "lat": 32.5977,
+      "lng": 21.4728
+    },
+    "era": "Mediterranean Highland Landscape",
+    "summaryEn": "A fertile, Mediterranean mountain plateau known for cool breezes, dense pine and juniper forests, terraced farms, and deep valleys.",
+    "summaryAr": "هضبة جبلية خصبة ومطلة على البحر الأبيض المتوسط، تتميز بنسائمها الباردة وغابات العرعر والصنوبر ومزارعها المعلقة ووديانها الخضراء الساحرة.",
+    "highlightsEn": [
+      "Lush Mediterranean pine and wild olive forests at 850m elevation",
+      "Panoramic mountain overlooks falling straight into turquoise Mediterranean bays",
+      "Historic mountain towns of Al Bayda, Shahat, and Al Marj"
+    ],
+    "highlightsAr": [
+      "غابات الصنوبر والعرعر والزيتون البري على ارتفاع 850 متراً",
+      "إطلالات جبلية شاهقة تنحدر نحو الخلجان البحرية الصافية",
+      "مدن جبلية عريقة تشمل البيضاء وشحات والمرج"
+    ],
+    "bestSeasonEn": "Spring (March–June) for wildflowers; Autumn for crisp air",
+    "bestSeasonAr": "الربيع للأزهار البرية والخريف للأجواء المنعشة",
+    "distanceEn": "200 km East of Benghazi (2.5 hrs)",
+    "distanceAr": "200 كم شرق بنغازي (ساعتان ونصف)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Jebel_Akhdar_(Libya)",
+    "image": {
+      "src": "/images/sights/jabal-al-akhdar.jpg",
+      "width": 2000,
+      "height": 1125,
+      "author": "ماهر العوامي",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D9%88%D8%A7%D8%AF%D9%8A_%D9%85%D8%B1%D9%82%D8%B5.jpg"
+    }
+  },
+  {
+    "slug": "wadi-al-kuf",
+    "nameEn": "Wadi al Kuf",
+    "nameAr": "وادي الكوف وجسره المعلق",
+    "region": "cyrenaica",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Al Bayda",
+    "cityAr": "البيضاء",
+    "coordinates": {
+      "lat": 32.6958,
+      "lng": 21.5647
+    },
+    "era": "Natural Gorge & Modern Engineering",
+    "summaryEn": "A dramatic verdant gorge spanning the Green Mountain, spanned by the landmark Wadi al Kuf Bridge.",
+    "summaryAr": "أخدود جبلي غابي شاهق يتوسط الجبل الأخضر، يعلوه جسر وادي الكوف المعلق الذي يعد تحفة هندسية معمارية فريدة وسط الطبيعة الخلابة.",
+    "highlightsEn": [
+      "One of Africa’s highest cable-stayed bridges spanning 282m across a 160m deep valley",
+      "Dense forest hiking trails filled with aromatic Mediterranean herbs and birds",
+      "Spectacular photography viewpoints along the gorge rims"
+    ],
+    "highlightsAr": [
+      "أحد أعلى الجسور المعلقة في إفريقيا بارتفاع 160 متراً فوق قاع الوادي",
+      "مسارات مشي جبلية بين أشجار الغابات والنباتات العطرية",
+      "نقاط مراقبة طبيعية ساحرة لهواة التصوير على حواف الأخدود"
+    ],
+    "bestSeasonEn": "October to May",
+    "bestSeasonAr": "من أكتوبر إلى مايو",
+    "distanceEn": "170 km from Benghazi (2 hrs)",
+    "distanceAr": "170 كم شرق بنغازي (ساعتان)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Wadi_al-Kuf_Bridge",
+    "image": {
+      "src": "/images/sights/wadi-al-kuf.jpg",
+      "width": 1280,
+      "height": 1024,
+      "author": "Maher27777",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wadi_el_Kuf_Bridge_2010.jpg"
+    }
+  },
+  {
+    "slug": "farwa-island",
+    "nameEn": "Farwa Island",
+    "nameAr": "محمية وشبه جزيرة فروة",
+    "region": "tripolitania",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Zuwara",
+    "cityAr": "زوارة",
+    "coordinates": {
+      "lat": 33.0833,
+      "lng": 11.75
+    },
+    "era": "Coastal Marine Biosphere",
+    "summaryEn": "A tranquil, undeveloped coastal spit in northwestern Libya home to salt marshes, nesting sea turtles, and migratory flamingos.",
+    "summaryAr": "لسان ساحلي عذري ومحمية طبيعية في أقصى الشمال الغربي الليبي، تتميز ببحيراتها الفيروزية الصافية، وتكاثر السلاحف البحرية، وأسراب طيور النحام الوردي (الفلامنجو).",
+    "highlightsEn": [
+      "Pristine 13-kilometer white sand spit separated from mainland by shallow lagoons",
+      "Flocks of migratory pink flamingos and endangered loggerhead sea turtle nests",
+      "Historic 1913 Italian maritime lighthouse at the tip of the spit"
+    ],
+    "highlightsAr": [
+      "شريط رملي نقي بطول 13 كم محاط ببحيرات شاطئية ضحلة وفيروزية",
+      "أسراب طيور الفلامنجو الوردية ومواقع تعشيش السلاحف البحرية النادرة",
+      "منارة بحرية إيطالية تاريخية أنشئت عام 1913 عند طرف الجزيرة"
+    ],
+    "bestSeasonEn": "May to October for warm waters; Winter for birdwatching",
+    "bestSeasonAr": "من مايو إلى أكتوبر للسباحة والشتاء لمراقبة الطيور",
+    "distanceEn": "140 km West of Tripoli (100 mins)",
+    "distanceAr": "140 كم غرب طرابلس (100 دقيقة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Farwa_Island",
+    "image": {
+      "src": "/images/sights/farwa-island.jpg",
+      "width": 2000,
+      "height": 1331,
+      "author": "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ISS042-E-47483_-_View_of_Libya.jpg"
+    }
+  },
+  {
+    "slug": "nalut-granary",
+    "nameEn": "Nalut Granary (Qasr Nalut)",
+    "nameAr": "قصر نالوت المحصن (الغاسرو)",
+    "region": "nafusa",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Nalut",
+    "cityAr": "نالوت",
+    "coordinates": {
+      "lat": 31.8683,
+      "lng": 10.9825
+    },
+    "era": "Amazigh / Berber Medieval Architecture (11th c.)",
+    "summaryEn": "A multi-tiered Berber fortified granary (Ghasro) perched on the escarpment edge of the Nafusa mountain range.",
+    "summaryAr": "قصر وحصن أمازيغي جبلي متعدد الطوابق معلق على حافة جرف جبل نفوسة الشاهق، يضم مئات الحجرات المنحوتة لتخزين زيت الزيتون والحبوب قديماً.",
+    "highlightsEn": [
+      "Over 400 subterranean and elevated mud-and-gypsum grain vaults (ghorfas)",
+      "Centuries-old stone olive oil press powered by wooden camel levers",
+      "Panoramic 360-degree vista over the Libyan pre-desert plateau"
+    ],
+    "highlightsAr": [
+      "أكثر من 400 غرفة صخرية وجصية محصنة لتخزين المحاصيل",
+      "معصرة زيتون حجرية تقليدية تعمل بآليات الرفع الخشبية القديمة",
+      "إطلالة بانورامية ساحرة من قمة الجبل تشرف على سهول الصحراء"
+    ],
+    "bestSeasonEn": "September to May (Crisp mountain air)",
+    "bestSeasonAr": "من سبتمبر إلى مايو (نسيم جبلي عليل)",
+    "distanceEn": "280 km South-West of Tripoli (3.5 hrs)",
+    "distanceAr": "280 كم جنوب غرب طرابلس (3.5 ساعات)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Nalut",
+    "image": {
+      "src": "/images/sights/nalut-granary.jpg",
+      "width": 1024,
+      "height": 768,
+      "author": "David Stanley",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nalut_ruins.jpg"
+    }
+  },
+  {
+    "slug": "qasr-kabaw",
+    "nameEn": "Qasr Kabaw",
+    "nameAr": "قصر كاباو الدائري الأمازيغي",
+    "region": "nafusa",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Kabaw",
+    "cityAr": "كاباو",
+    "coordinates": {
+      "lat": 31.8444,
+      "lng": 11.3397
+    },
+    "era": "Berber Medieval (12th century)",
+    "summaryEn": "Another distinctive round Amazigh stone granary chamber clinging to the cliffside in the western Nafusa highlands.",
+    "summaryAr": "حصن ومخزن جبلي دائري الشكل من أروع معالم الهندسة الأمازيغية في أعالي جبل نفوسة، يلتف حول فناء صخري تحميه جدران جصية متينة.",
+    "highlightsEn": [
+      "Circular stone courtyard encircled by five tiers of storage cells",
+      "Historic spring water conduits and defensive watchtower gates",
+      "Authentic Amazigh highland culture and carpet weaving workshops"
+    ],
+    "highlightsAr": [
+      "فناء دائري محاط بخمسة طوابق من الغرف الصخرية المحفوظة",
+      "قنوات مائية أثرية وأبراج مراقبة دفاعية حصينة",
+      "ثقافة أمازيغية جبلية أصيلة ومشاغل للنسيج التقليدي"
+    ],
+    "bestSeasonEn": "Year-round",
+    "bestSeasonAr": "على مدار العام",
+    "distanceEn": "250 km from Tripoli (3 hrs)",
+    "distanceAr": "250 كم جنوب غرب طرابلس (3 ساعات)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Kabaw",
+    "image": {
+      "src": "/images/sights/qasr-kabaw.jpg",
+      "width": 1280,
+      "height": 960,
+      "author": "anchishkyn",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabau_-_panoramio.jpg"
+    }
+  },
+  {
+    "slug": "gharyan-troglodytes",
+    "nameEn": "Gharyan Troglodyte Underground Houses",
+    "nameAr": "حواش الحفر المعمارية بغريان",
+    "region": "nafusa",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Gharyan",
+    "cityAr": "غريان",
+    "coordinates": {
+      "lat": 32.1697,
+      "lng": 13.0167
+    },
+    "era": "Indigenous Troglodyte Subterranean Architecture",
+    "summaryEn": "Traditional earthen cave homes excavated deep into the sandstone hills to keep interiors naturally cool during summer and warm in winter.",
+    "summaryAr": "منازل سكنية أثرية محفورة في باطن صخور جبال غريان، صممت بعبقرية بيئية لتظل معتدلة الحرارة صيفاً وشتاءً، وتشتهر غريان كذلك بصناعة الفخار التقليدي.",
+    "highlightsEn": [
+      "Central open-air circular courtyard sunk 10 meters beneath the ground surface",
+      "Naturally regulated interior temperatures (consistently 20-22°C year-round)",
+      "Famous Gharyan handmade terracotta pottery road markets"
+    ],
+    "highlightsAr": [
+      "فناء داخلي دائري محفور على عمق 10 أمتار تحت سطح الأرض",
+      "درجة حرارة طبيعية ثابتة ومريحة تتراوح بين 20 و22 مئوية دائماً",
+      "أسواق فخار غريان الخزفي التقليدي الشهير على مدخل المدينة"
+    ],
+    "bestSeasonEn": "Year-round (Favorite weekend road trip from Tripoli)",
+    "bestSeasonAr": "على مدار العام (الوجهة الأحب لعطلة الجمعة والسبت من طرابلس)",
+    "distanceEn": "85 km South of Tripoli (75 mins)",
+    "distanceAr": "85 كم جنوب طرابلس (ساعة وربع)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Gharyan",
+    "image": {
+      "src": "/images/sights/gharyan-troglodytes.jpg",
+      "width": 777,
+      "height": 529,
+      "author": "not mentioned",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gharian_Old_Town.jpg"
+    }
+  },
+  {
+    "slug": "wadi-kaam",
+    "nameEn": "Wadi Kaam (Wadi Caam)",
+    "nameAr": "وادي كعام وسد البحيرة العذبة",
+    "region": "tripolitania",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Zliten / Al Khums",
+    "cityAr": "زليتن / الخمس",
+    "coordinates": {
+      "lat": 32.4833,
+      "lng": 14.4333
+    },
+    "era": "Natural Coastal Valley & Freshwater Basin",
+    "summaryEn": "A coastal valley and freshwater reservoir near Zliten and Khoms, popular for green camping, kayaking, and family weekend barbecues.",
+    "summaryAr": "واد ساحلي خصب وبحيرة مياه عذبة تمتد خلف سد كعام بين الخمس وزليتن، وجهة محبوبة للتخييم العائلي، التجديف، ورحلات الشواء بين أشجار الكينا.",
+    "highlightsEn": [
+      "Expansive freshwater lake bordered by lush reed beds and eucalyptus groves",
+      "Kayaking, freshwater fishing, and open barbecue spaces for local families",
+      "Proximity to Leptis Magna and Zliten historic olive orchards"
+    ],
+    "highlightsAr": [
+      "بحيرة مياه عذبة واسعة تحيط بها أشجار الكينا وغابات القصب",
+      "رياضات التجديف، وصيد الأسماك النهري، وأماكن شواء عائلية مجهزة",
+      "قربه من آثار لبدة الكبرى ومزارع الزيتون التاريخية في زليتن"
+    ],
+    "bestSeasonEn": "October to May",
+    "bestSeasonAr": "من أكتوبر إلى مايو",
+    "distanceEn": "135 km East of Tripoli (100 mins)",
+    "distanceAr": "135 كم شرق طرابلس (100 دقيقة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Wadi_Kaam_Dam",
+    "image": {
+      "src": "/images/sights/wadi-kaam.jpg",
+      "width": 2000,
+      "height": 2667,
+      "author": "Mhmd.abdrzg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colorful_Vegetable_Display_at_Wadi_Kaam_Market.jpg"
+    }
+  },
+  {
+    "slug": "slonta",
+    "nameEn": "Slonta Prehistoric Sanctuary",
+    "nameAr": "مغارة ومعبد سلونطة الأثري",
+    "region": "cyrenaica",
+    "category": "mountains",
+    "access": "day-trip",
+    "city": "Slonta",
+    "cityAr": "سلونطة",
+    "coordinates": {
+      "lat": 32.5903,
+      "lng": 21.7158
+    },
+    "era": "Indigenous Proto-Berber / Libyan Antiquity",
+    "summaryEn": "A unique Cyrenaican rock-cut grotto containing stone carvings of human faces, coiled snakes, and animals dating back to indigenous Libyan antiquity.",
+    "summaryAr": "مغارة أثرية فريدة في سفوح الجبل الأخضر، تحوي منحوتات حجرية لوجوه بشرية، وثعابين ملتفة، وحيوانات مقدسة تعبر عن المعتقدات الليبية القديمة قبل الإغريق.",
+    "highlightsEn": [
+      "Enigmatic carved stone faces projecting directly from limestone grotto walls",
+      "Unique non-Greco-Roman indigenous Libyan sacred sanctuary art",
+      "Surrounded by tranquil olive groves and rolling green pastures"
+    ],
+    "highlightsAr": [
+      "وجوه حجرية غامضة وبارزة مباشرة من جدران المغارة الكلسية",
+      "معبد ومزار يعكس الفن الديني الليبي الأصيل قبل التأثيرات الرومانية",
+      "موقع هادئ بين مزارع الزيتون والمراعي الخضراء في الجبل"
+    ],
+    "bestSeasonEn": "Spring and Autumn",
+    "bestSeasonAr": "فصلا الربيع والخريف",
+    "distanceEn": "185 km East of Benghazi (2.2 hrs)",
+    "distanceAr": "185 كم شرق بنغازي (ساعتان وربع)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Slonta",
+    "image": {
+      "src": "/images/sights/slonta.jpg",
+      "width": 1024,
+      "height": 768,
+      "author": "Maher A. A. Abdussalam",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slonta2.JPG"
+    }
+  },
+  {
+    "slug": "red-castle-tripoli",
+    "nameEn": "The Red Castle (Assaraya al-Hamra)",
+    "nameAr": "قلعة السرايا الحمراء ومتحف ليبيا",
+    "region": "tripolitania",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Tripoli",
+    "cityAr": "طرابلس",
+    "coordinates": {
+      "lat": 32.8961,
+      "lng": 13.1804
+    },
+    "era": "Roman, Byzantine, Ottoman & Modern Fortress",
+    "summaryEn": "The historic heart of Tripoli overlooking Martyrs' Square, housing multi-era fortresses and national artifacts from prehistory to Roman eras.",
+    "summaryAr": "القلب التاريخي النابض للعاصمة طرابلس والمطل على ميدان الشهداء، قلعة شامخة عبر العصور تضم المتحف الوطني للآثار ومقتنيات من العصور الحجرية وحتى الرومانية.",
+    "highlightsEn": [
+      "Historic ramparts with cannons overlooking Tripoli commercial port and harbor",
+      "National Archaeological Museum holding imperial Roman statues from Leptis Magna",
+      "Gateway connecting modern Tripoli to the winding alleys of the Old Medina"
+    ],
+    "highlightsAr": [
+      "أسوار القلعة التاريخية مع المدافع القديمة المشرفة على ميناء طرابلس",
+      "متحف السرايا الأثري الذي يضم تماثيل رخامية نادرة جلبت من لبدة الكبرى",
+      "البوابة الرابطة بين طرابلس الحديثة وأزقة المدينة القديمة العتيقة"
+    ],
+    "bestSeasonEn": "Year-round",
+    "bestSeasonAr": "على مدار العام",
+    "distanceEn": "Downtown Tripoli (Martyrs Square)",
+    "distanceAr": "وسط العاصمة (ميدان الشهداء)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Red_Castle_of_Tripoli",
+    "image": {
+      "src": "/images/sights/red-castle-tripoli.jpg",
+      "width": 1024,
+      "height": 768,
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Al-Saraya_al-Hamra_Fortress,_Tripoli_(5282695461).jpg"
+    }
+  },
+  {
+    "slug": "arch-of-marcus-aurelius",
+    "nameEn": "Arch of Marcus Aurelius (Tripoli)",
+    "nameAr": "قوس ماركوس أوريليوس بطرابلس",
+    "region": "tripolitania",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Tripoli",
+    "cityAr": "طرابلس",
+    "coordinates": {
+      "lat": 32.8999,
+      "lng": 13.1758
+    },
+    "era": "Roman Empire (163 CE)",
+    "summaryEn": "A preserved Roman marble triumphal arch constructed in 163 AD at the entrance to the Old Medina of Tripoli.",
+    "summaryAr": "قوس نصر روماني من الرخام الأبيض الخالص شيد عام 163 ميلادي في عهد الإمبراطور ماركوس أوريليوس، ينتصب شامخاً عند المدخل الشمالي للمدينة القديمة بطرابلس.",
+    "highlightsEn": [
+      "Octagonal solid marble tetrapylon arch with relief carvings of Apollo and Minerva",
+      "Atmospheric plaza surrounded by historic cafes and handicraft workshops",
+      "Starting point for evening walking tours into Tripoli’s heritage alleys"
+    ],
+    "highlightsAr": [
+      "قوس رخامي ثماني الزوايا مزين بنقوش الإلهين أبولو ومينيرفا",
+      "ساحة حجرية تعج بالمقاهي الشعبية ومشاغل الحرف التقليدية",
+      "نقطة انطلاق مثالية لجولات المشي المسائية داخل المدينة القديمة"
+    ],
+    "bestSeasonEn": "Year-round (Evenings are vibrant)",
+    "bestSeasonAr": "على مدار العام (الأمسيات تنبض بالحياة)",
+    "distanceEn": "Northern Entrance of Tripoli Old Medina",
+    "distanceAr": "المدخل الشمالي للمدينة القديمة قرب الميناء",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Arch_of_Marcus_Aurelius_(Tripoli)",
+    "image": {
+      "src": "/images/sights/arch-of-marcus-aurelius.jpg",
+      "width": 2000,
+      "height": 1500,
+      "author": "Daniel and Kate Pett",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marcus_Aurelius_Arch_Tripoli_Libya.jpg"
+    }
+  },
+  {
+    "slug": "tripoli-old-medina",
+    "nameEn": "Tripoli Old Medina & Souqs",
+    "nameAr": "أزقة وأسواق المدينة القديمة بطرابلس",
+    "region": "tripolitania",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Tripoli",
+    "cityAr": "طرابلس",
+    "coordinates": {
+      "lat": 32.897,
+      "lng": 13.179
+    },
+    "era": "Phoenician, Ottoman & Arab Medina",
+    "summaryEn": "A dense network of whitewashed alleys, traditional copper craftsmen, perfumers, and historic mosques like Gurgi and Karamanli.",
+    "summaryAr": "شبكة حيوية من الأزقة التاريخية البيضاء، تضم أسواق الحرير والنحاسين والعطارين ومقاهي الشاي باللوز ومساجد عريقة كجامع درغوت وقرجي وقصر القرمانلي.",
+    "highlightsEn": [
+      "Souq al-Mushir with traditional amber perfumers and artisanal copper hammers",
+      "Historic boutique cafes serving espresso and traditional almond tea in restored courtyards",
+      "Karamanli House Museum displaying 18th-century Mediterranean domestic splendor"
+    ],
+    "highlightsAr": [
+      "سوق المشير وسوق النحاسين والعطور والبخور التقليدية",
+      "مقاه تراثية راقية تقدم الشاي باللوز والقهوة المختصة في دور قديمة مرممة",
+      "بيت القرمانلي التاريخي الذي يعكس نمط العيش المتوسطي في القرن الثامن عشر"
+    ],
+    "bestSeasonEn": "Year-round (Thursday & Friday evenings are especially lively)",
+    "bestSeasonAr": "على مدار العام (أمسيات الخميس والجمعة مميزة جداً)",
+    "distanceEn": "Tripoli City Center",
+    "distanceAr": "وسط العاصمة طرابلس",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Tripoli#Old_City",
+    "image": {
+      "src": "/images/sights/tripoli-old-medina.jpg",
+      "width": 646,
+      "height": 806,
+      "author": "rahuldlucca",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tripoli_Medina_Mosque.jpg"
+    }
+  },
+  {
+    "slug": "gurgi-mosque",
+    "nameEn": "Gurgi Mosque & Clock Tower (Tripoli)",
+    "nameAr": "جامع قرجي الأثري وبرج الساعة",
+    "region": "tripolitania",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Tripoli",
+    "cityAr": "طرابلس",
+    "coordinates": {
+      "lat": 32.8994,
+      "lng": 13.1756
+    },
+    "era": "Late Ottoman Period (1834 CE)",
+    "summaryEn": "One of Tripoli’s most intricate Ottoman-era mosques, lined with imported Italian marble columns, Iznik tiles, and an adjacent Ottoman clock tower.",
+    "summaryAr": "تحفة العمارة العثمانية في طرابلس، شيد عام 1834 بواسطة مصطفى قرجي، ويتميز بأعمدته الرخامية الإيطالية، وبلاط إزنيك المزخرف، ومنارته المثمنة الشاهقة بجوار برج الساعة.",
+    "highlightsEn": [
+      "Extensive hand-painted ceramic Iznik tiles imported from Anatolia",
+      "Carved floral stucco ceilings and 16 Italian Carrara marble columns",
+      "Adjacent Ottoman-era clock tower erected during the 19th century"
+    ],
+    "highlightsAr": [
+      "بلاطات خزفية ملونة يدوياً جلبت من إزنيك والأناضول",
+      "نقوش جصية نباتية بديعة و16 عموداً من رخام كرارا الإيطالي",
+      "برج الساعة العثماني التاريخي الشامخ بجوار المسجد"
+    ],
+    "bestSeasonEn": "Year-round",
+    "bestSeasonAr": "على مدار العام",
+    "distanceEn": "Adjacent to Marcus Aurelius Arch (Tripoli)",
+    "distanceAr": "بجوار قوس ماركوس أوريليوس (المدينة القديمة)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Gurgi_Mosque",
+    "image": {
+      "src": "/images/sights/gurgi-mosque.jpg",
+      "width": 2000,
+      "height": 1500,
+      "author": "Abdul-Jawad Elhusuni (عبدالجواد الحسوني)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gurgi_Mosque_Exterior_Tripoli_Libya.JPG"
+    }
+  },
+  {
+    "slug": "benghazi-lighthouse",
+    "nameEn": "Benghazi Italianate Old City & Lighthouse",
+    "nameAr": "المدينة الإيطالية ومنارة بنغازي التاريخية",
+    "region": "cyrenaica",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Benghazi",
+    "cityAr": "بنغازي",
+    "coordinates": {
+      "lat": 32.1167,
+      "lng": 20.0667
+    },
+    "era": "Venetian & Italian Colonial (Early 20th c.)",
+    "summaryEn": "The historic maritime quarter of Benghazi featuring early 20th-century Venetian-influenced colonnades and the iconic waterfront lighthouse.",
+    "summaryAr": "الحي البحري والتاريخي لمدينة بنغازي، يتميز بأروقته المعمارية ذات الطابع الفينيسي ومنارته البحرية العريقة المنتصبة على الكورنيش لتوجيه السفن منذ 1922.",
+    "highlightsEn": [
+      "Iconic 41-meter spiral waterfront lighthouse overlooking the Gulf of Sidra",
+      "Italian-era colonnaded streetscapes around Omar Al-Mukhtar street",
+      "Fresh seafood restaurants along the harbor promenade serving local catch"
+    ],
+    "highlightsAr": [
+      "منارة بنغازي البحرية الشاهقة بارتفاع 41 متراً المشرفة على الخليج",
+      "الأروقة والأعمدة الإيطالية على طول شارع عمر المختار والبلدية",
+      "مطاعم الأسماك الطازجة على رصيف الميناء بإطلالة بحرية رائعة"
+    ],
+    "bestSeasonEn": "Year-round",
+    "bestSeasonAr": "على مدار العام",
+    "distanceEn": "Downtown Benghazi Waterfront",
+    "distanceAr": "كورنيش بنغازي ووسط المدينة",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Benghazi",
+    "image": {
+      "src": "/images/sights/benghazi-lighthouse.jpg",
+      "width": 1024,
+      "height": 768,
+      "author": "David Stanley from Nanaimo, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Italian_Lighthouse,_Benghazi_(5283376618).jpg"
+    }
+  },
+  {
+    "slug": "derna-waterfalls",
+    "nameEn": "Derna Old Medina & Waterfalls",
+    "nameAr": "مدينة درنة وشلالاتها الطبيعية",
+    "region": "cyrenaica",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Derna",
+    "cityAr": "درنة",
+    "coordinates": {
+      "lat": 32.7636,
+      "lng": 22.6361
+    },
+    "era": "Andalusian, Ottoman & Green Mountain Valley",
+    "summaryEn": "A valley city nestled against Jebel Akhdar featuring Ottoman street layouts, historic mosques, and freshwater spring cascades in the hills.",
+    "summaryAr": "عروس الجبل الأخضر وواديها الخلاب، تشتهر بشلالات المياه العذبة المتدفقة من الجبال، ومسجد الصحابة، وحاراتها الأندلسية والعثمانية العريقة.",
+    "highlightsEn": [
+      "Natural freshwater cascades in the limestone foothills of Jebel Akhdar",
+      "Historic Sahaba Mosque and ancient arched bridges crossing the wadi",
+      "Renowned local pastry shops serving traditional Ka’ak and almond honey sweets"
+    ],
+    "highlightsAr": [
+      "شلالات مياه طبيعية عذبة متدفقة في سفوح صخور الجبل الأخضر",
+      "مسجد الصحابة التاريخي والجسور المقوسة التي تعبر مجرى الوادي",
+      "محلات الحلويات الدرناوية الأصيلة كالكعك المعسل والمقروض"
+    ],
+    "bestSeasonEn": "November to May (When spring water flows strongest)",
+    "bestSeasonAr": "من نوفمبر إلى مايو (فترة تدفق الشلالات القوي)",
+    "distanceEn": "280 km East of Benghazi (3.5 hrs)",
+    "distanceAr": "280 كم شرق بنغازي (3.5 ساعات)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Derna,_Libya",
+    "image": {
+      "src": "/images/sights/derna-waterfalls.jpg",
+      "width": 700,
+      "height": 337,
+      "author": "not mentioned",
+      "license": "Public domain",
+      "licenseUrl": null,
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Derna_Valley.jpg"
+    }
+  },
+  {
+    "slug": "ras-al-helal",
+    "nameEn": "Ras al-Helal Beach & Cove",
+    "nameAr": "شاطئ وخليج رأس الهلال الفيروزي",
+    "region": "cyrenaica",
+    "category": "coastal",
+    "access": "day-trip",
+    "city": "Ras al-Helal",
+    "cityAr": "رأس الهلال",
+    "coordinates": {
+      "lat": 32.8833,
+      "lng": 22.1833
+    },
+    "era": "Mediterranean Coastal Haven",
+    "summaryEn": "A coastal bay where the forested slopes of Jebel Akhdar meet clear Mediterranean water and rocky coves.",
+    "summaryAr": "خليج بحري ساحر تعانق فيه غابات الجبل الأخضر الخضراء مياه البحر الأبيض المتوسط الفيروزية الصافية، وتنتشر به الكهوف والخلجان الهادئة.",
+    "highlightsEn": [
+      "Crystal-clear turquoise Mediterranean waters bordered by pine cliffs",
+      "Natural sea caves and rocky coves popular with snorkelers and spearfishers",
+      "Scenic seaside corniche drive between Sousa and Derna"
+    ],
+    "highlightsAr": [
+      "مياه فيروزية فائقة النقاء تحيط بها سفوح الصنوبر الخضراء",
+      "كهوف بحرية طبيعية وخلجان صخرية مثالية للغوص والسباحة",
+      "طريق ساحلي بانورامي يخطف الأنفاس يربط سوسة برأس الهلال"
+    ],
+    "bestSeasonEn": "May to October for swimming; Year-round for scenery",
+    "bestSeasonAr": "من مايو إلى أكتوبر للسباحة وعلى مدار العام للطبيعة",
+    "distanceEn": "220 km East of Benghazi (2.5 hrs)",
+    "distanceAr": "220 كم شرق بنغازي (ساعتان ونصف)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Ras_al-Helal",
+    "image": {
+      "src": "/images/sights/ras-al-helal.jpg",
+      "width": 1500,
+      "height": 1125,
+      "author": "Elmondo21st",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ras_al_Helal_harbour.JPG"
+    }
+  },
+  {
+    "slug": "al-atrun-churches",
+    "nameEn": "Al-Atrun Byzantine Churches",
+    "nameAr": "كنائس الأثرون البيزنطية البحرية",
+    "region": "cyrenaica",
+    "category": "classical",
+    "access": "day-trip",
+    "city": "Latrun (Al-Atrun)",
+    "cityAr": "الأثرون",
+    "coordinates": {
+      "lat": 32.8725,
+      "lng": 22.2708
+    },
+    "era": "Byzantine Empire (Justinian Era, 6th c. CE)",
+    "summaryEn": "Two seaside 6th-century Justinian-era Byzantine basilicas constructed with red limestone and marble, perched on coastal cliffs overlooking the waves.",
+    "summaryAr": "كنيستان بيزنطيتان من عهد الإمبراطور جستنيان (القرن السادس الميلادي)، شيدتا بالحجارة الوردية والرخام الأبيض على جرف صخري يشرف مباشرة على أمواج البحر.",
+    "highlightsEn": [
+      "Two twin 6th-century basilicas with intact marble baptistery fonts",
+      "Striking cliffside setting with columns standing directly against sea spray",
+      "Preserved mosaic floors and early Christian Greek liturgical inscriptions"
+    ],
+    "highlightsAr": [
+      "بازيليكيتان توأمان من القرن السادس تضمان أحواض تعميد رخامية سالمة",
+      "موقع درامي استثنائي حيث تنتصب الأعمدة الرخامية أمام رذاذ أمواج البحر",
+      "أرضيات فسيفسائية ونقوش مسيحية يونانية أثرية"
+    ],
+    "bestSeasonEn": "September to May",
+    "bestSeasonAr": "من سبتمبر إلى مايو",
+    "distanceEn": "235 km from Benghazi (3 hrs)",
+    "distanceAr": "235 كم شرق بنغازي (3 ساعات)",
+    "unesco": false,
+    "wikipedia": "https://en.wikipedia.org/wiki/Latrun",
+    "image": {
+      "src": "/images/sights/al-atrun-churches.jpg",
+      "width": 2000,
+      "height": 1333,
+      "author": "Ngweiss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Al-Athrun_Ostkirche_Apsis.JPG"
+    }
+  }
+]

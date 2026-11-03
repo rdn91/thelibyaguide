@@ -1,0 +1,387 @@
+{
+  "dishes": [
+    {
+      "id": "bazeen",
+      "nameEn": "Bazeen",
+      "nameAr": "البازين الليبي",
+      "originEn": "Tripolitania & Western Mountain Valleys",
+      "originAr": "طرابلس وجبل نفوسة وسهل الجفارة",
+      "category": "communal",
+      "descriptionEn": "The undisputed king of Libyan culinary heritage: a dense, sculpted dome of unleavened barley flour surrounded by a rich red tomato broth, bone-in mutton, potatoes, boiled eggs, and charred green chili peppers.",
+      "descriptionAr": "سيد المائدة الليبية وعنوان كرم الضيافة: قبة متماسكة من دقيق الشعير الصلب محاطة بمرق الطماطم الغني ولحم الخروف الطري والبطاطا والبيض المسلوق والفلفل الأخضر الحار.",
+      "loreEn": "Historically crafted by Berber and Arab desert nomads using the Maghraf (wooden kneading pestle), Bazeen requires serious upper-body endurance to pound to exact elasticity. Traditionally served on Fridays after Jumu’ah prayer in a single communal wooden bowl (Qas’a).",
+      "loreAr": "يتطلب إعداد البازين مهارة وقوة بدنية لعجن دقيق الشعير بالمغرف الخشبي التقليدي. يقدم ظهيرة كل جمعة بعد الصلاة كرمز للتلاحم الأسري في قصعة خشبية واحدة.",
+      "ingredientsEn": [
+        "Toasted stone-ground barley flour",
+        "Prime bone-in lamb shoulder or shank",
+        "Rich tomato paste & simmered onions",
+        "Libyan Bzar spice blend & turmeric",
+        "Fenugreek seeds (Halba)",
+        "Boiled potatoes & eggs"
+      ],
+      "ingredientsAr": [
+        "دقيق شعير بلدي محمص ومطحون حجرياً",
+        "لحم خروف وطني بالعظم",
+        "معجون طماطم وبصل مكرمل",
+        "بزار ليبي مطحون وكركم",
+        "حبوب الحلبة العطرية",
+        "بطاطا وبيض مسلوق وفلفل حار"
+      ],
+      "eatingProtocolEn": "Eaten strictly with the right hand from the central shared Qas’a. Break off a bite-sized piece of barley dome, roll it between your fingers into a scoop, dip deeply into the spiced lamb gravy, and eat in one bite.",
+      "eatingProtocolAr": "يؤكل باليد اليمنى مباشرة من القصعة المشتركة: يتم قطع لقمة صغيرة من قبة الشعير ودعكها بالأصابع لتشكل تجويفاً يغمس به في المرق واللحم وتؤكل في قضمة واحدة.",
+      "spiciness": 4,
+      "image": {
+        "src": "/images/cuisine/bazeen.jpg",
+        "width": 1600,
+        "height": 1200,
+        "author": "Libiya11",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bazin.jpg"
+      }
+    },
+    {
+      "id": "mbakbka",
+      "nameEn": "Mbakbka (Imbakbaka)",
+      "nameAr": "المبكبكة الليبية",
+      "originEn": "Pan-Libyan (Urban & Bedouin Heritage)",
+      "originAr": "كافة المدن والبوادي الليبية",
+      "category": "everyday",
+      "descriptionEn": "Libya’s famous one-pot fiery pasta dish. Unlike Italian pasta cooked in salted water, Mbakbka pasta boils directly inside an aromatic, bubbling tomato broth seasoned with lamb, chickpeas, garlic, and fresh fiery chilies.",
+      "descriptionAr": "أشهر أطباق المعكرونة السريعة في شمال أفريقيا: تطهى المعكرونة مباشرة داخل مرق الطماطم الحار المتكتك مع قطع اللحم والحمص والتوم وقرون الفلفل الحار دون سلق مسبق.",
+      "loreEn": "Its iconic name comes from the bubbling sound (\"bak-bak-bak\") of the simmering tomato broth in the pot. It is the ultimate late-night comfort dish for university students, desert safari bivouacs, and seaside friends gathering.",
+      "loreAr": "يعود اسمها إلى صوت غليان المرق في القدر (تبكبك). وهي رفيقة رحلات الصحراء (الزردة) وسهرات الأصدقاء ووجبة العشاء المحبوبة لكل بيت ليبي.",
+      "ingredientsEn": [
+        "Ditalini or penne rigate pasta",
+        "Tender diced lamb or chicken",
+        "Concentrated Libyan tomato paste",
+        "Soaked chickpeas & crushed garlic",
+        "Ground coriander & caraway (Karwiya)",
+        "Fresh green bird’s eye chilies"
+      ],
+      "ingredientsAr": [
+        "معكرونة أقلام أو خواتم صغيرة",
+        "قطع لحم ضأن طازج أو دجاج",
+        "معجون طماطم ليبي مكثف",
+        "حمص منقوع وثوم مهروس",
+        "كزبرة وكروية وبزار ليبي",
+        "قرون فلفل أخضر حار طازجة"
+      ],
+      "eatingProtocolEn": "Served piping hot directly into a shallow metal platter with fresh crusty bread. Best eaten immediately while steaming.",
+      "eatingProtocolAr": "تسكب ساخنة جداً تتصاعد منها الأبخرة العطرية، وتؤكل بالملعقة أو بالخبز الطازج وهي في قمة حرارتها.",
+      "spiciness": 5,
+      "image": null
+    },
+    {
+      "id": "asida",
+      "nameEn": "Asida (Aseeda)",
+      "nameAr": "العصيدة الليبية بالرب والسمن",
+      "originEn": "Traditional Historic Libya",
+      "originAr": "التراث التاريخي لكافة أرجاء ليبيا",
+      "category": "celebration",
+      "descriptionEn": "A warm, velvety dome of cooked wheat flour batter, cratered at the center to hold pools of pure date molasses (Rubb) and steaming melted sheep ghee (Dihn).",
+      "descriptionAr": "حلوى تراثية مهيبة قوامها عجينة ناعمة ودافئة من دقيق القمح الفاخر، يُصنع في وسطها تجويف يفيض برب التمر الصحراوي الطبيعي وسمن الضأن البلدي الذائب.",
+      "loreEn": "Served at dawn to welcome the birth of a newborn, on the morning of Eid, and during Mawlid an-Nabi (Prophet’s Birthday). It represents maternal nourishment, abundance, and ancient Saharan celebration.",
+      "loreAr": "تُطهى في فجر يوم المولد النبوي الشريف وصباحات العيد ومناسبات قدوم المواليد الجدد كرمز للبركة وحلاوة البدايات وتجدد الحياة.",
+      "ingredientsEn": [
+        "Finely sifted durum wheat flour",
+        "Pure Saharan date molasses (Rubb)",
+        "Clarified sheep ghee (Dihn)",
+        "Touch of sea salt and filtered water"
+      ],
+      "ingredientsAr": [
+        "دقيق قمح صلب منخول بعناية",
+        "رب تمر فزاني طبيعي نقي",
+        "سمن غنم بلدي وطني معطر",
+        "رشة ملح بحري وماء نقي"
+      ],
+      "eatingProtocolEn": "Communal breakfast dish: pick off warm dough pieces from the outer rim with your index and middle fingers, dredge through the melted butter and molasses center, and enjoy.",
+      "eatingProtocolAr": "تؤكل بالأصابع من أطراف العجينة الخارجية نحو المركز لغمسها في بحيرة الرب والسمن الدافيء.",
+      "spiciness": 1,
+      "image": {
+        "src": "/images/cuisine/asida.jpg",
+        "width": 2000,
+        "height": 1335,
+        "author": "Mustafa Al-Elq",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D8%B9%D8%B5%D9%8A%D8%AF%D8%A9-%D9%82%D8%B7%D9%8A%D9%81%D9%8A%D8%A9.jpg"
+      }
+    },
+    {
+      "id": "usban",
+      "nameEn": "Usban (Osban)",
+      "nameAr": "العصبان الليبي التقليدي",
+      "originEn": "Coastal & Interior Historic Towns",
+      "originAr": "المدن الساحلية والواحات الصحراوية",
+      "category": "celebration",
+      "descriptionEn": "Libya’s most revered culinary artform: delicate sheep intestines stuffed with an aromatic mosaic of finely diced liver, heart, short-grain rice, fresh garden herbs, and warm bzar spices.",
+      "descriptionAr": "أفخم الأطباق الاحتفالية الليبية: ممبار محشو بخلطة ساحرة من الكبد والقلب المفروم والأرز والأعشاب الخضراء الطازجة وتوليفة البزار والنعناع المجفف.",
+      "loreEn": "The star of Eid al-Adha. Preparing Usban is an all-day multi-generational family event where women clean, finely hand-dice herbs, and stuff the casings with millimeter precision.",
+      "loreAr": "نجم عيد الأضحى بلا منازع. تجهيزه ملحمة أسرية تشارك فيها الأمهات والجدات لتقطيع الخضار وحشو الأمعاء بدقة متناهية قبل غليها في مرق متبل.",
+      "ingredientsEn": [
+        "Fresh sheep casing & tripe",
+        "Diced sheep liver, heart & lamb fat",
+        "Short-grain Egyptian rice",
+        "Fresh parsley, dill, cilantro & wild mint",
+        "Green spring onions & tomatoes",
+        "Libyan dried mint and cayenne pepper"
+      ],
+      "ingredientsAr": [
+        "أمعاء وكرشة خروف طازجة منظفة",
+        "كبد وقلب ولحم مفروم ناعماً",
+        "أرز مصري قصير الحبة",
+        "بقدونس وشبت وكسبر ونعناع جاف",
+        "بصل أخضر وطماطم طازجة",
+        "بهارات بزار وفلفل أحمر حار"
+      ],
+      "eatingProtocolEn": "Served sliced on a communal bed of rice or couscous, or eaten warm by hand as a centerpiece delicacy.",
+      "eatingProtocolAr": "يقدم مقطعاً إلى دوائر شهية فوق أطباق الكسكسي أو الأرز، ويؤكل ساخناً باليد أو الشوكة.",
+      "spiciness": 3,
+      "image": {
+        "src": "/images/cuisine/usban.jpg",
+        "width": 2000,
+        "height": 1333,
+        "author": "AmelGhouila",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tunisian_Osban_couscous.JPG",
+        "caption": "Tunisian osban — the Libyan usban is a close cousin"
+      }
+    },
+    {
+      "id": "sharba-libiya",
+      "nameEn": "Sharba Libiya (National Soup)",
+      "nameAr": "الشوربة الليبية بالنعناع",
+      "originEn": "Pan-Libyan",
+      "originAr": "كافة أرجاء ليبia",
+      "category": "soup",
+      "descriptionEn": "The soul of every Libyan sunset table: a velvet tomato broth simmered with tender mutton cubes, tender chickpeas, and miniature orzo pasta, crowned with crushed dried desert mint and freshly squeezed lemon.",
+      "descriptionAr": "روح المائدة الرمضانية وعطر الأصالة: حساء طماطم مخملي بلحم الخروف الصغير والحمص وحبات لسان العصفور، تعلوه رشة النعناع البري المجفف وعصير الليمون.",
+      "loreEn": "Every single Libyan fast during the holy month of Ramadan is broken with a steaming bowl of Sharba Libiya accompanied by dates and savory Brik. The dried mint added right before serving is non-negotiable.",
+      "loreAr": "لا تكتمل مائدة إفطار رمضانية في أي بيت ليبي دون صحن الشوربة الساخن بجوار التمر والبريك. رشة النعناع اليابس في اللحظة الأخيرة سر نكهتها الفريدة.",
+      "ingredientsEn": [
+        "Tender bite-sized lamb cubes",
+        "Golden chickpeas",
+        "Orzo pasta (Lisan al-Asfour)",
+        "Tomato paste & chopped celery",
+        "Crushed dried wild mint (Na’na’ Yabis)",
+        "Fresh lemon wedges"
+      ],
+      "ingredientsAr": [
+        "قطع لحم خروف مقطعة ناعماً",
+        "حمص حب مقشور",
+        "معكرونة لسان العصفور",
+        "معجون طماطم وكرفس مفروم",
+        "نعناع جبلي مجفف ومفروم باليد",
+        "شرائح ليمون طازجة"
+      ],
+      "eatingProtocolEn": "Squeeze generous lemon juice into the bowl, swirl with a spoon, and sip slowly with hot ftat or baguette bread.",
+      "eatingProtocolAr": "يُعصر الليمون بسخاء في الصحن وتؤكل بالملعقة إلى جانب خبز الفطاط أو الخبز الطازج المقرمش.",
+      "spiciness": 3,
+      "image": null
+    },
+    {
+      "id": "brik",
+      "nameEn": "Tripoli Brik (Bureek)",
+      "nameAr": "البريك الطرابلسي المقرمش",
+      "originEn": "Tripoli & Western Mediterranean Coast",
+      "originAr": "طرابلس ومدن الساحل الغربي",
+      "category": "pastry",
+      "descriptionEn": "Ultra-thin, golden crisp pastry envelope encasing spiced potato purée, Mediterranean tuna, capers, flat-leaf parsley, and a whole soft-cooked egg that bursts upon the first bite.",
+      "descriptionAr": "رقائق عجين ملساء ومقرمشة تُقلى حتى تصبح ذهبية، محشوة بالبطاطا المتبلة والتونة وقطع البقدونس وبيضة كاملة طرية تتدفق مع القضمة الأولى.",
+      "loreEn": "Influenced by centuries of maritime Mediterranean trading, the Libyan brik is folded into a triangular or semicircular shape and fried in boiling oil for just 90 seconds to maintain a perfectly runny yolk.",
+      "loreAr": "يُطوى على شكل مثلثات ذهبية ويقلى في الزيت الساخن لثوان معدودة لضمان بقاء صفار البيض سائلاً وشهياً.",
+      "ingredientsEn": [
+        "Warka (paper-thin pastry sheets)",
+        "Fresh farm egg (runny center)",
+        "Solid light tuna in olive oil",
+        "Steamed spiced potato mash",
+        "Finely chopped parsley & onion",
+        "Harissa paste & lemon"
+      ],
+      "ingredientsAr": [
+        "ورقة بريك رقيقة جداً",
+        "بيضة بلدية طازجة (صفار سائل)",
+        "تونة متوسطية فاخرة بزيت الزيتون",
+        "بطاطا مسلوقة ومهروسة مع البهارات",
+        "بقدونس وبصل مفروم",
+        "هريسة حارة وليمون"
+      ],
+      "eatingProtocolEn": "Hold with two hands over your plate, bite the crisp corner first, and savor the warm runny yolk without spilling.",
+      "eatingProtocolAr": "يُمسك باليدين وتُقضم الزاوية المقرمشة بحذر لاحتساء صفار البيض السائل قبل أن ينسكب.",
+      "spiciness": 2,
+      "image": null
+    },
+    {
+      "id": "ghoriba",
+      "nameEn": "Ghoriba (Cardamom Shortbread)",
+      "nameAr": "الغريبة الليبية باللوز والسمسم",
+      "originEn": "Pan-Libyan Historic Pastries",
+      "originAr": "تراث الحلويات التقليدية في كافة المدن",
+      "category": "pastry",
+      "descriptionEn": "Exquisite, melt-in-the-mouth shortbread biscuits crowned with toasted almonds and sesame seeds, famous for their signature crackled top surface and fragrant ghee aroma.",
+      "descriptionAr": "بسكويت تراثي فاخر يذوب في الفم ذوباناً، مرصع بحبات اللوز المحمص والسمسم، ويتميز بسطحه المشقق الجميل ورائحته الزكية بالسمن والهل.",
+      "loreEn": "The hallmark of a master baker is achieving the \"Tashaquq\" (fine crackled pattern) across the dome while keeping the interior crumbly and buttery soft. Always served alongside frothy Libyan foam tea.",
+      "loreAr": "علامة براعة صانع الغريبة هي ظهور التشققات الدقيقة على سطحها مع بقائها هشة وطرية من الداخل. تقدم دائماً بجوار كؤوس الشاي الأخضر برغوته الكثيفة.",
+      "ingredientsEn": [
+        "Sifted fine flour",
+        "Powdered sugar",
+        "Purified sheep butter / ghee",
+        "Toasted blanched whole almonds",
+        "Toasted sesame seeds",
+        "Touch of ground cardamom"
+      ],
+      "ingredientsAr": [
+        "دقيق فاخر منخول",
+        "سكر بودرة ناعم",
+        "سمن بلدي نقي مصفى",
+        "حبات لوز بلدي محمص",
+        "سمسم محمص ذهبي",
+        "رشة هيل مطحون ناعم"
+      ],
+      "eatingProtocolEn": "Gently pick up with your fingertips (it crumbles easily) and pair with a hot glass of frothy mint tea.",
+      "eatingProtocolAr": "تُمسك بأطراف الأصابع برقة لهشاشتها وتُتناول مع رشفات الشاي الليبي بالرغوة واللوز.",
+      "spiciness": 1,
+      "image": null
+    }
+  ],
+  "tea": {
+    "title": "The three glasses",
+    "body": "Libyan tea is boiled strong and sweet, then poured from height until a thick foam forms on top. The first glass is the boldest, the second softer, and the third is often served with mint or with roasted peanuts or almonds floating in it. It is an act of hospitality, so accepting at least one glass is the polite default."
+  },
+  "etiquette": [
+    {
+      "title": "Friday is family day",
+      "body": "Friday midday prayer is followed by a long family lunch, and bazeen or couscous is the classic. Most shops close until late afternoon. Plan sightseeing for the morning or the evening."
+    },
+    {
+      "title": "Eat with the right hand",
+      "body": "Communal dishes like bazeen are eaten from a shared bowl with the right hand. Your host will usually push the best pieces of meat toward you. Accept them."
+    },
+    {
+      "title": "Saying no takes three tries",
+      "body": "Hosts will offer again and again. A hand on the heart with 'alhamdulillah, shabaant' (I'm full, thank God) closes the conversation kindly."
+    },
+    {
+      "title": "Dress for the medina",
+      "body": "Shoulders and knees covered for everyone in old towns and mosques. Women bring a scarf for mosque visits. Beach dress belongs at the beach."
+    },
+    {
+      "title": "Ask before photographing people",
+      "body": "Landscapes and ruins are fine. People, checkpoints and security buildings are not, unless your guide says so."
+    },
+    {
+      "title": "Ramadan changes the clock",
+      "body": "Daytime restaurants close and evenings come alive after iftar. Don't eat or drink in public during daylight hours."
+    }
+  ],
+  "whereToEat": [
+    {
+      "type": "Mat'am sha'bi",
+      "label": "Popular kitchens",
+      "body": "Small, cheap canteens near souqs and bus stations serving the dish of the day — often sharba, mbakbka or couscous. Ask your guide for their own lunch spot. It's usually the best one."
+    },
+    {
+      "type": "Port grills",
+      "label": "Fresh Mediterranean seafood",
+      "body": "In Tripoli, Zuwara, Misrata and Benghazi, you pick fish from the counter, pay by weight and have it grilled with Libyan salad and harissa."
+    },
+    {
+      "type": "Family homes",
+      "label": "Friday bazeen",
+      "body": "The real thing is cooked at home. Many operators arrange a family lunch on request — the most memorable meal of most trips."
+    },
+    {
+      "type": "Medina cafés",
+      "label": "Tea and coffee",
+      "body": "Tripoli's old city and Benghazi's Italianate centre are dotted with cafés for strong espresso — an Italian-era habit — and three-glass tea."
+    }
+  ],
+  "local": {
+    "weekendIdeas": [
+      {
+        "title": "Sabratha theatre at golden hour",
+        "sights": [
+          "sabratha"
+        ],
+        "from": "Tripoli",
+        "drive": "~1 hr",
+        "body": "Leave after Friday lunch and reach the theatre for late-afternoon light. Grilled fish in Sabratha town on the way back."
+      },
+      {
+        "title": "Gharyan cave houses & pottery road",
+        "sights": [
+          "gharyan-troglodytes"
+        ],
+        "from": "Tripoli",
+        "drive": "~1.5 hr",
+        "body": "Climb onto the Nafusa escarpment, visit a restored underground house and stop at the roadside pottery stalls."
+      },
+      {
+        "title": "Leptis Magna and the Wadi Kaam market",
+        "sights": [
+          "leptis-magna",
+          "wadi-kaam"
+        ],
+        "from": "Tripoli",
+        "drive": "~1.5 hr",
+        "body": "A full morning at Leptis, then produce and tea at the weekly market near Al Khums."
+      },
+      {
+        "title": "Green Mountain loop",
+        "sights": [
+          "jabal-al-akhdar",
+          "wadi-al-kuf",
+          "cyrene"
+        ],
+        "from": "Benghazi",
+        "drive": "~3 hr",
+        "body": "Juniper forest, the Wadi al-Kuf gorge and an overnight near Shahat for Cyrene at sunrise."
+      },
+      {
+        "title": "Ras al-Hilal cove",
+        "sights": [
+          "ras-al-helal",
+          "apollonia"
+        ],
+        "from": "Al Bayda",
+        "drive": "~1 hr",
+        "body": "Swim in the cove, then walk Apollonia's harbour ruins at Susa."
+      }
+    ],
+    "marketClusters": [
+      {
+        "city": "Tripoli",
+        "name": "Souq al-Mushir & Souq al-Turk",
+        "find": [
+          "Copper and brass",
+          "Gold",
+          "Traditional dress",
+          "Spices"
+        ],
+        "body": "The covered souqs of the old medina, entered near the Red Castle."
+      },
+      {
+        "city": "Tripoli",
+        "name": "Gargaresh Street",
+        "find": [
+          "Fashion",
+          "Electronics",
+          "Cafés"
+        ],
+        "body": "The city's long western shopping strip — busiest after sunset."
+      },
+      {
+        "city": "Benghazi",
+        "name": "Souq al-Jareed",
+        "find": [
+          "Fabrics",
+          "Household goods",
+          "Perfume"
+        ],
+        "body": "Benghazi's traditional market, a short walk from the old Italianate centre."
+      }
+    ]
+  }
+}

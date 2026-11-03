@@ -1,62 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800;900&display=swap');
 @import "tailwindcss";
 @import "leaflet/dist/leaflet.css";
 
+/* "Libyan Earth & Mediterranean Sea" — design tokens.
+   *-ink variants are darkened for WCAG AA body text; the base accents are for fills, rules and large display type. */
+@theme {
+  --color-ground: #fafaf7;
+  --color-card: #efece6;
+  --color-dark: #0c131a;
+  --color-white: #ffffff;
+
+  --color-ink: #111820;
+  --color-muted: #636b74;
+  --color-inverse: #f8f9fa;
+
+  --color-sea: #104068;
+  --color-sea-soft: #e3ebf2;
+  --color-ochre: #c58940;
+  --color-ochre-ink: #8b5a1f;
+  --color-olive: #3b5745;
+
+  --color-open: #2d6a4f;
+  --color-open-soft: #e2efe8;
+  --color-permit: #d97706;
+  --color-permit-ink: #9a4a04;
+  --color-permit-soft: #fbeedd;
+  --color-closed: #8c2f2f;
+  --color-closed-soft: #f5e3e1;
+
+  --color-line: #e2dfd8;
+  --color-line-strong: #cfcac0;
+
+  --font-display: var(--font-playfair), Georgia, 'Times New Roman', serif;
+  --font-sans: var(--font-jakarta), system-ui, sans-serif;
+  --font-arabic: var(--font-plex-arabic), system-ui, sans-serif;
+
+  --shadow-card: 0 1px 2px rgb(12 19 26 / 0.04), 0 8px 24px -12px rgb(12 19 26 / 0.12);
+  --shadow-lift: 0 2px 4px rgb(12 19 26 / 0.05), 0 24px 48px -20px rgb(12 19 26 / 0.28);
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 :root {
-  --background: #090d16;
-  --foreground: #f8fafc;
-  --font-latin: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-arabic: 'Tajawal', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-latin);
-  overflow-x: hidden;
+  background: var(--color-ground);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-[dir="rtl"] body,
-.font-arabic {
-  font-family: var(--font-arabic) !important;
+[dir='rtl'] body,
+[dir='rtl'] .font-display {
+  font-family: var(--font-arabic);
 }
 
-/* Custom modern scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
 }
 
-::-webkit-scrollbar-track {
-  background: #0f172a;
+::selection {
+  background: var(--color-sea);
+  color: var(--color-inverse);
 }
 
-::-webkit-scrollbar-thumb {
-  background: #334155;
+:focus-visible {
+  outline: 2px solid var(--color-sea);
+  outline-offset: 3px;
   border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
-/* Leaflet dark/amber theme overrides */
+/* Leaflet, restyled to the limestone palette */
 .leaflet-container {
-  width: 100%;
-  height: 100%;
-  border-radius: 1rem;
-  background-color: #0f172a !important;
-  z-index: 10;
+  background: var(--color-card);
+  font-family: var(--font-sans);
 }
-
 .leaflet-popup-content-wrapper {
-  background-color: #0f172a !important;
-  color: #f8fafc !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  border-radius: 0.75rem !important;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 12px;
+  box-shadow: var(--shadow-lift);
 }
-
-.leaflet-popup-tip {
-  background-color: #0f172a !important;
+.leaflet-popup-content {
+  margin: 12px 14px;
+}
+.leaflet-control-attribution {
+  font-size: 10px;
 }
