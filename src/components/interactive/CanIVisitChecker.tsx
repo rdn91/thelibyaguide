@@ -25,6 +25,10 @@ const LEAD = [
   { id: '6plus', label: 'More than 6 weeks', weeks: 8 },
 ];
 
+// The submit button unmounts on the result screen; a stable ref callback moves focus to the result once it mounts
+// (after AnimatePresence's exit), instead of leaving it on <body>.
+const focusOnMount = (el: HTMLElement | null) => el?.focus();
+
 const STEPS = ['Passport', 'Visa path', 'Itinerary', 'Operator'] as const;
 
 const VERDICT: Record<Verdict, { tone: Tone; label: string; Icon: typeof Check }> = {
@@ -301,7 +305,9 @@ export default function CanIVisitChecker() {
 
             {done && (
               <div>
-                <h3 className="font-display text-2xl">Your readiness protocol</h3>
+                <h3 ref={focusOnMount} tabIndex={-1} className="font-display text-2xl outline-none">
+                  Your results
+                </h3>
                 <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {results.map((r) => {
                     const v = VERDICT[r.verdict];
@@ -344,7 +350,7 @@ export default function CanIVisitChecker() {
               onClick={() => setStep((s) => (passport?.blocked ? STEPS.length : s + 1))}
               disabled={!canNext}
             >
-              {step === STEPS.length - 1 ? 'See my protocol' : 'Continue'}
+              {step === STEPS.length - 1 ? 'See my results' : 'Continue'}
               <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
             </Button>
           )}

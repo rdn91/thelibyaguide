@@ -57,7 +57,7 @@
       "lng": 12.4842
     },
     "era": "Phoenician & Roman (500 BCE - 4th c. CE)",
-    "summaryEn": "An ancient Phoenician trading post turned Roman city, celebrated for its iconic three-story, 96-column theater backdrop overlooking the Mediterranean Sea.",
+    "summaryEn": "An ancient Phoenician trading post turned Roman city, celebrated for its iconic three-story colonnaded theater backdrop overlooking the Mediterranean Sea.",
     "summaryAr": "تشتهر بمسرحها الروماني الأسطوري ذي الأعمدة الوردية ثلاثية الطوابق المنتصبة قبالة أمواج البحر الأبيض المتوسط. نشأت كمركز تجاري فينيقي ثم ازدهرت في العهد الروماني، وتضم معابد إيزيس وسيرابيس وحمامات الفسيفساء.",
     "highlightsEn": [
       "Iconic 3-tier Roman Theater scaenae frons with 108 Corinthian marble columns",
@@ -319,8 +319,8 @@
     ],
     "bestSeasonEn": "November to March (Cool desert days, crisp stargazing nights)",
     "bestSeasonAr": "من نوفمبر إلى مارس (أجواء شتوية صحراوية معتدلة وليال باردة)",
-    "distanceEn": "1,350 km from Tripoli (Domestic flight to Ghat TIP-GHT)",
-    "distanceAr": "1,350 كم جنوب طرابلس (يوصى برحلة طيران إلى غات)",
+    "distanceEn": "1,350 km from Tripoli (domestic flight from Mitiga to Ghat when scheduled, or a long overland transfer)",
+    "distanceAr": "1,350 كم جنوب طرابلس (رحلة داخلية من معيتيقة إلى غات عند توفرها، أو نقل بري طويل)",
     "unesco": true,
     "wikipedia": "https://en.wikipedia.org/wiki/Acacus_Mountains",
     "image": {
@@ -381,7 +381,7 @@
     "nameAr": "مدينة غدامس القديمة (لؤلؤة الصحراء)",
     "region": "tripolitania",
     "category": "desert",
-    "access": "expedition",
+    "access": "day-trip",
     "city": "Ghadames",
     "cityAr": "غدامس",
     "coordinates": {
@@ -431,8 +431,8 @@
       "lng": 17.7628
     },
     "era": "Quaternary Geological Volcanism",
-    "summaryEn": "An extinct volcanic caldera in the remote southern desert surrounded by dark black basalt ash and multiple colorful mineral lakes.",
-    "summaryAr": "فوهة بركانية خامدة في أقصى الجنوب الليبي، محاطة بهالة من الرماد البازلتي الأسود تمتد لعشرات الكيلومترات وبداخلها واحة مذهلة تضم بحيرات ملونة كلوحة سريالية.",
+    "summaryEn": "An extinct volcanic caldera in the remote southern desert surrounded by dark black basalt ash and multiple colorful mineral lakes. Rarely offered to foreign visitors in 2026: the deep south is under the strictest advisories.",
+    "summaryAr": "فوهة بركانية خامدة في أقصى الجنوب الليبي، محاطة بهالة من الرماد البازلتي الأسود تمتد لعشرات الكيلومترات وبداخلها واحة مذهلة تضم بحيرات ملونة كلوحة سريالية. نادراً ما تُتاح للزوار الأجانب في 2026، إذ يخضع أقصى الجنوب لأشد التحذيرات.",
     "highlightsEn": [
       "Striking dark volcanic ash field forming a 10–20 km black circle on golden Saharan sands",
       "Central caldera containing 3 colorful mineral-rich salt lakes and reed vegetation",
@@ -515,8 +515,8 @@
       "lng": 13.9
     },
     "era": "Ottoman & Trans-Saharan Caravan Era (16th - 19th c.)",
-    "summaryEn": "A key historical trans-Saharan trade caravan hub anchored by an ancient desert fortress on the edge of the Murzuk Sand Sea.",
-    "summaryAr": "عاصمة فزان التاريخية وإحدى أهم محطات قوافل التجارة عبر الصحراء الكبرى، تحتضن قلعة عثمانية طينية مهيبة عند حافة بحر رمال مرزق العظيم.",
+    "summaryEn": "A key historical trans-Saharan trade caravan hub anchored by an ancient desert fortress on the edge of the Murzuk Sand Sea. Rarely offered to foreign visitors in 2026: the deep south is under the strictest advisories.",
+    "summaryAr": "عاصمة فزان التاريخية وإحدى أهم محطات قوافل التجارة عبر الصحراء الكبرى، تحتضن قلعة عثمانية طينية مهيبة عند حافة بحر رمال مرزق العظيم. نادراً ما تُتاح للزوار الأجانب في 2026، إذ يخضع أقصى الجنوب لأشد التحذيرات.",
     "highlightsEn": [
       "Historic mudbrick Murzuk fortress guarding ancient camel caravan trails",
       "Gateway to the grand Murzuk Sand Sea with towering star dunes",
@@ -557,8 +557,8 @@
       "lng": 12.1704
     },
     "era": "Neolithic Period (8,000 – 4,000 BCE)",
-    "summaryEn": "A prehistoric open-air gallery in the Messak Settafet plateau displaying Neolithic engravings of elephants, giraffes, crocodiles, and wild cattle.",
-    "summaryAr": "معرض أثري مفتوح في هضبة مساك ستافت، يضم نقوشاً صخرية بديعة من العصر الحجري الحديث تصور الأفيال والزرافات والتماسيح والأبقار الوحشية.",
+    "summaryEn": "A prehistoric open-air gallery in the Messak Settafet plateau displaying Neolithic engravings of elephants, giraffes, crocodiles, and wild cattle. Rarely offered to foreign visitors in 2026: the deep south is under the strictest advisories.",
+    "summaryAr": "معرض أثري مفتوح في هضبة مساك ستافت، يضم نقوشاً صخرية بديعة من العصر الحجري الحديث تصور الأفيال والزرافات والتماسيح والأبقار الوحشية. نادراً ما تُتاح للزوار الأجانب في 2026، إذ يخضع أقصى الجنوب لأشد التحذيرات.",
     "highlightsEn": [
       "World-famous lifesize petroglyph of the \"Fighting Cats\" and mammoth elephants",
       "Empirical proof of the Green Sahara era with water-dependent river animals",
@@ -683,8 +683,8 @@
       "lng": 11.75
     },
     "era": "Coastal Marine Biosphere",
-    "summaryEn": "A tranquil, undeveloped coastal spit in northwestern Libya home to salt marshes, nesting sea turtles, and migratory flamingos.",
-    "summaryAr": "لسان ساحلي عذري ومحمية طبيعية في أقصى الشمال الغربي الليبي، تتميز ببحيراتها الفيروزية الصافية، وتكاثر السلاحف البحرية، وأسراب طيور النحام الوردي (الفلامنجو).",
+    "summaryEn": "A tranquil, undeveloped coastal spit in northwestern Libya home to salt marshes, nesting sea turtles, and migratory flamingos. The coastal road west of Tripoli carries a high security risk, so go only with an operator who checks conditions on the day.",
+    "summaryAr": "لسان ساحلي عذري ومحمية طبيعية في أقصى الشمال الغربي الليبي، تتميز ببحيراتها الفيروزية الصافية، وتكاثر السلاحف البحرية، وأسراب طيور النحام الوردي (الفلامنجو). الطريق الساحلي غرب طرابلس عالي الخطورة أمنياً، فلا تذهب إلا مع منظم رحلات يتحقق من الأوضاع في اليوم نفسه.",
     "highlightsEn": [
       "Pristine 13-kilometer white sand spit separated from mainland by shallow lagoons",
       "Flocks of migratory pink flamingos and endangered loggerhead sea turtle nests",
@@ -1145,8 +1145,8 @@
       "lng": 22.6361
     },
     "era": "Andalusian, Ottoman & Green Mountain Valley",
-    "summaryEn": "A valley city nestled against Jebel Akhdar featuring Ottoman street layouts, historic mosques, and freshwater spring cascades in the hills.",
-    "summaryAr": "عروس الجبل الأخضر وواديها الخلاب، تشتهر بشلالات المياه العذبة المتدفقة من الجبال، ومسجد الصحابة، وحاراتها الأندلسية والعثمانية العريقة.",
+    "summaryEn": "A valley city nestled against Jebel Akhdar featuring Ottoman street layouts, historic mosques, and freshwater spring cascades in the hills. Storm Daniel and the dam collapse of September 2023 destroyed much of the centre and killed thousands; the city is rebuilding, so visit with care and respect.",
+    "summaryAr": "عروس الجبل الأخضر وواديها الخلاب، تشتهر بشلالات المياه العذبة المتدفقة من الجبال، ومسجد الصحابة، وحاراتها الأندلسية والعثمانية العريقة. دمّرت العاصفة دانيال وانهيار السدّين في سبتمبر 2023 جزءاً كبيراً من وسط المدينة وأودت بحياة الآلاف، وما زالت درنة تُعاد إعمارها، فزُرها باحترام.",
     "highlightsEn": [
       "Natural freshwater cascades in the limestone foothills of Jebel Akhdar",
       "Historic Sahaba Mosque and ancient arched bridges crossing the wadi",

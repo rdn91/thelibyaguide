@@ -8,9 +8,10 @@ import { Eyebrow, SectionHeading } from '@/components/ui/Card';
 import { logistics, sights } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'Visa, LOI & logistics',
+  title: 'Libya tourist e-Visa, LOI & entry logistics',
   description:
     'How the Libyan tourist e-Visa works: operator sponsorship, the Letter of Invitation, entry airports and borders, the Guided Corridor Protocol, and a 4-step readiness check.',
+  alternates: { canonical: '/logistics' },
 };
 
 export default function LogisticsPage() {
@@ -73,7 +74,7 @@ export default function LogisticsPage() {
         <SectionHeading
           id="checker-h"
           eyebrow="Can I visit Libya?"
-          title="Four steps to a straight answer."
+          title="Four steps to a straight answer"
           lede="Passport, visa timing, itinerary and operator. The checker runs in your browser and sends nothing anywhere."
         />
         <div className="mt-10">
@@ -86,7 +87,7 @@ export default function LogisticsPage() {
           <SectionHeading
             id="corridor-h"
             eyebrow="The Guided Corridor Protocol"
-            title="Where tourism runs, and how."
+            title="Where tourism runs, and how"
             lede="An editorial classification drawn from how licensed operators work today. It is not an official government zoning, and it does not override any advisory."
           />
           <div className="mt-10">

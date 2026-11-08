@@ -52,7 +52,7 @@ export interface StatusItem {
   lastVerified: string | null;
 }
 
-export interface Advisory {
+interface Advisory {
   id: string;
   issuer: string;
   rating: string;
@@ -62,7 +62,7 @@ export interface Advisory {
   asOf: string;
 }
 
-export interface VerifyLink {
+interface VerifyLink {
   label: string;
   url?: string;
 }
@@ -75,7 +75,7 @@ export interface RealityRow {
   verify: VerifyLink[];
 }
 
-export interface CorridorTier {
+interface CorridorTier {
   tier: 'A' | 'B' | 'C';
   name: string;
   badge: string;
@@ -91,7 +91,7 @@ export interface CorridorRoute {
   points: [number, number][];
 }
 
-export interface Passport {
+interface Passport {
   id: string;
   label: string;
   advisory: string | null;
@@ -117,7 +117,7 @@ export interface Logistics {
   passports: Passport[];
 }
 
-export interface Dish {
+interface Dish {
   id: string;
   nameEn: string;
   nameAr: string;

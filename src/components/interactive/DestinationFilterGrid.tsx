@@ -16,7 +16,7 @@ import { ACCESS_LABELS, CATEGORY_LABELS, REGION_LABELS, cn, formatCoords } from 
 
 type Filters = { region: Region | 'all'; category: Category | 'all'; access: Access | 'all' };
 
-function Chips<T extends string>({
+export function Chips<T extends string>({
   label,
   value,
   options,
@@ -30,9 +30,9 @@ function Chips<T extends string>({
   allLabel: string;
 }) {
   return (
-    <fieldset>
-      <legend className="mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-muted">{label}</legend>
-      <div className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 sm:flex-wrap sm:overflow-visible">
+    <fieldset className="min-w-0">
+      <legend className="mb-2 text-sm font-semibold text-muted">{label}</legend>
+      <div className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 [scrollbar-width:none] sm:flex-wrap sm:overflow-visible">
         {[{ id: 'all' as const, label: allLabel, count: -1 }, ...options].map((o) => {
           const active = value === o.id;
           return (
@@ -43,7 +43,7 @@ function Chips<T extends string>({
               onClick={() => onChange(o.id as T | 'all')}
               disabled={o.count === 0}
               className={cn(
-                'shrink-0 rounded-full border px-3.5 py-1.5 text-sm font-medium transition-colors',
+                'min-h-11 shrink-0 rounded-full border px-4 text-sm font-medium transition-colors active:scale-[0.97]',
                 active ? 'border-sea bg-sea text-inverse' : 'border-line bg-white text-ink hover:border-line-strong',
                 o.count === 0 && 'opacity-40',
               )}
@@ -67,10 +67,15 @@ export default function DestinationFilterGrid({ sights }: { sights: Sight[] }) {
   const deferredQuery = useDeferredValue(query);
   const [open, setOpen] = useState<Sight | null>(null);
 
+  // Unknown values (?region=foo) fall back to 'all' instead of emptying the grid.
+  const pick = <T extends string>(key: keyof Filters, labels: Record<T, unknown>): T | 'all' => {
+    const v = params.get(key);
+    return v && Object.hasOwn(labels, v) ? (v as T) : 'all';
+  };
   const filters: Filters = {
-    region: (params.get('region') as Region) || 'all',
-    category: (params.get('category') as Category) || 'all',
-    access: (params.get('access') as Access) || 'all',
+    region: pick('region', REGION_LABELS),
+    category: pick('category', CATEGORY_LABELS),
+    access: pick('access', ACCESS_LABELS),
   };
 
   const setFilter = (key: keyof Filters, value: string) => {

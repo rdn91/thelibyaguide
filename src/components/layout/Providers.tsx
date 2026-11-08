@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { MotionConfig } from 'framer-motion';
 import type { Lang, Mode } from '@/lib/types';
 import { getDict, type Dict } from '@/lib/i18n';
 
@@ -62,7 +63,12 @@ export default function Providers({ children }: { children: React.ReactNode }) {
 
   const value = useMemo(() => ({ lang, mode, t: getDict(lang), setLang, setMode }), [lang, mode, setLang, setMode]);
 
-  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+  return (
+    <Ctx.Provider value={value}>
+      {/* "user": framer-motion drops transform and layout animations when the OS asks for reduced motion. */}
+      <MotionConfig reducedMotion="user">{children}</MotionConfig>
+    </Ctx.Provider>
+  );
 }
 
 export function useSite(): SiteContext {

@@ -17,7 +17,7 @@ const COLUMNS = [
       { href: '/logistics', label: 'e-Visa & LOI' },
       { href: '/logistics#corridor', label: 'Guided Corridor Protocol' },
       { href: '/logistics#checker', label: 'Can I visit?' },
-      { href: '/travel-advisory-debunked', label: 'Reality Index' },
+      { href: '/is-libya-safe', label: 'Reality Index' },
     ],
   },
   {

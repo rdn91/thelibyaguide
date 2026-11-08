@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowUpRight, CalendarDays, Compass, Landmark, MapPin, Route
 import { Badge } from '@/components/ui/Badge';
 import { Eyebrow } from '@/components/ui/Card';
 import { Credit, SightImage } from '@/components/ui/SightImage';
+import { JsonLd } from '@/components/seo/JsonLd';
 import type { Sight } from '@/lib/types';
 import { ACCESS_LABELS, CATEGORY_LABELS, REGION_LABELS, formatCoords, getSight, sights } from '@/lib/utils';
 
@@ -20,9 +21,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const sight = getSight((await params).slug);
   if (!sight) return {};
   return {
-    title: sight.nameEn,
+    title: `${sight.nameEn}: what to see and how to visit`,
     description: sight.summaryEn,
-    openGraph: sight.image ? { images: [sight.image.src] } : undefined,
+    alternates: { canonical: `/destinations/${sight.slug}` },
+    // openGraph replaces the layout's object, so repeat its shared fields.
+    openGraph: {
+      type: 'website',
+      siteName: 'The Libya Guide',
+      images: [sight.image?.src ?? '/images/sights/leptis-magna.jpg'],
+    },
   };
 }
 
@@ -56,15 +63,28 @@ export default async function SightPage({ params }: PageProps) {
   const { lat, lng } = sight.coordinates;
   const osm = `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=13/${lat}/${lng}`;
 
+  const url = `https://thelibyaguide.com/destinations/${sight.slug}`;
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'TouristAttraction',
+    '@id': url,
+    url,
     name: sight.nameEn,
     alternateName: sight.nameAr,
     description: sight.summaryEn,
     geo: { '@type': 'GeoCoordinates', latitude: lat, longitude: lng },
     image: sight.image ? `https://thelibyaguide.com${sight.image.src}` : undefined,
     sameAs: sight.wikipedia ?? undefined,
+    containedInPlace: { '@type': 'Country', name: 'Libya' },
+  };
+  const breadcrumbs = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thelibyaguide.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Destinations', item: 'https://thelibyaguide.com/destinations' },
+      { '@type': 'ListItem', position: 3, name: sight.nameEn, item: url },
+    ],
   };
 
   const facts = [
@@ -84,7 +104,8 @@ export default async function SightPage({ params }: PageProps) {
 
   return (
     <article>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <JsonLd data={jsonLd} />
+      <JsonLd data={breadcrumbs} />
 
       <header className="relative isolate overflow-hidden bg-dark text-inverse">
         <SightImage

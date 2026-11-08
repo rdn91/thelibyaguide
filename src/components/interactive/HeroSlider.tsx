@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -9,7 +10,7 @@ import { ButtonLink } from '@/components/ui/Button';
 import { Credit } from '@/components/ui/SightImage';
 import QuickCheck from './QuickCheck';
 import type { ImageCredit } from '@/lib/types';
-import { cn } from '@/lib/utils';
+import { cn, formatDate } from '@/lib/utils';
 
 export interface HeroSlide {
   image: ImageCredit;
@@ -20,7 +21,14 @@ export interface HeroSlide {
 
 const INTERVAL = 7000;
 
-export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
+export default function HeroSlider({
+  slides,
+  trust,
+}: {
+  slides: HeroSlide[];
+  /** ISO dates: the US advisory's last reissue and the site's last fact check. */
+  trust: { advisoryAsOf: string; reviewed: string };
+}) {
   const { t, mode, lang } = useSite();
   const reduce = useReducedMotion();
   const [index, setIndex] = useState(0);
@@ -67,13 +75,12 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       />
 
       <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-4 pb-10 pt-24 sm:px-6 lg:px-8 lg:pb-14">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-ochre">{t.hero.eyebrow}</p>
         <motion.h1
           key={`h-${mode}-${lang}`}
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-4 max-w-4xl font-display text-[clamp(2.5rem,7vw,5.75rem)] leading-[0.98] text-balance"
+          className="max-w-4xl font-display text-[clamp(2.5rem,7vw,5.75rem)] leading-[0.98] text-balance"
         >
           {resident ? t.hero.residentTitle : t.hero.title}
         </motion.h1>
@@ -82,35 +89,49 @@ export default function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         </p>
 
         <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href={resident ? '/local' : '/destinations'} variant="inverse" size="lg">
-            {resident ? t.hero.weekends : t.hero.explore}
+          {/* Tourists start with safety, then visas; locals start with weekends. Same links exist in both modes. */}
+          <ButtonLink href={resident ? '/local' : '/is-libya-safe'} variant="inverse" size="lg">
+            {resident ? t.hero.weekends : t.hero.safe}
             <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
           </ButtonLink>
           <ButtonLink
-            href="/travel-advisory-debunked"
+            href={resident ? '/destinations' : '/logistics'}
             size="lg"
             className="border border-inverse/40 bg-transparent text-inverse shadow-none hover:bg-inverse/10"
           >
-            {t.hero.reality}
+            {resident ? t.hero.explore : t.hero.visa}
           </ButtonLink>
         </div>
+
+        <Link
+          href="/is-libya-safe"
+          className="mt-6 flex max-w-2xl items-start gap-2.5 text-sm leading-relaxed text-inverse/85 hover:text-inverse"
+        >
+          <span className="mt-[7px] size-2 shrink-0 rounded-full bg-[#e0634f]" aria-hidden />
+          <span>
+            {t.hero.advisories} <bdi>{formatDate(trust.advisoryAsOf)}</bdi>.{' '}
+            <span className="whitespace-nowrap font-semibold underline underline-offset-4">
+              {t.hero.reviewed} <bdi>{formatDate(trust.reviewed)}</bdi>
+            </span>
+          </span>
+        </Link>
 
         <div className="mt-10 grid gap-6 lg:mt-14 lg:grid-cols-[minmax(0,32rem)_1fr] lg:items-end">
           {!resident && <QuickCheck />}
           <div className={cn('flex items-end justify-between gap-4', resident && 'lg:col-span-2')}>
-            <div className="min-w-0" aria-live="polite">
-              <a href={slide.href} className="font-display text-lg hover:underline">
+            {/* Announce only slides the user picked, not every auto-advance. */}
+            <div className="min-w-0" aria-live={paused ? 'polite' : 'off'}>
+              <Link href={slide.href} className="font-display text-lg hover:underline">
                 {lang === 'ar' ? slide.placeAr : slide.place}
-              </a>
+              </Link>
               <Credit image={slide.image} className="mt-1 block w-fit bg-transparent px-0 backdrop-blur-none" />
             </div>
-            <div className="flex shrink-0 items-center gap-2" role="tablist" aria-label="Choose slide">
+            <div className="flex shrink-0 items-center gap-2" role="group" aria-label="Choose slide">
               {slides.map((s, i) => (
                 <button
                   key={s.image.src}
                   type="button"
-                  role="tab"
-                  aria-selected={i === index}
+                  aria-current={i === index}
                   aria-label={`Show ${s.place}`}
                   onClick={() => setIndex(i)}
                   className="relative h-8 w-10"

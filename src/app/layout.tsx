@@ -4,6 +4,7 @@ import './globals.css';
 import Providers from '@/components/layout/Providers';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { JsonLd } from '@/components/seo/JsonLd';
 
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair', display: 'swap' });
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: '--font-jakarta', display: 'swap' });
@@ -29,6 +30,28 @@ export const metadata: Metadata = {
   },
 };
 
+const SITE_JSON_LD = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Organization',
+      '@id': 'https://thelibyaguide.com/#org',
+      name: 'The Libya Guide',
+      alternateName: 'دليل ليبيا',
+      url: 'https://thelibyaguide.com',
+      description: "An independent editorial guide to Libya. It doesn't sell tours.",
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://thelibyaguide.com/#website',
+      name: 'The Libya Guide',
+      url: 'https://thelibyaguide.com',
+      inLanguage: 'en',
+      publisher: { '@id': 'https://thelibyaguide.com/#org' },
+    },
+  ],
+};
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -39,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" dir="ltr" className={`${playfair.variable} ${jakarta.variable} ${plexArabic.variable}`}>
       <body className="flex min-h-dvh flex-col">
+        <JsonLd data={SITE_JSON_LD} />
         <Providers>
           <a
             href="#main"

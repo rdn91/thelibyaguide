@@ -5,28 +5,52 @@ import RealityComparisonTable from '@/components/interactive/RealityComparisonTa
 import StatusBoard from '@/components/interactive/StatusBoard';
 import { Badge } from '@/components/ui/Badge';
 import { Eyebrow, SectionHeading } from '@/components/ui/Card';
+import { JsonLd } from '@/components/seo/JsonLd';
 import { formatDate, logistics } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'The Reality Index — Libya travel advisories, read closely',
+  title: 'Is Libya safe to visit? 2026 travel advisories, read closely',
   description:
-    'US State Department and UK FCDO warnings on Libya, quoted with their dates and set beside how escorted tourism works and what you can verify yourself.',
+    'US, UK and Canadian warnings on Libya, quoted with their dates and linked in full, set beside how escorted tourism works and what you can verify yourself.',
+  alternates: { canonical: '/is-libya-safe' },
 };
 
+const H1 = 'The warnings are real. So is the country behind them.';
+
 export default function RealityIndexPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': 'https://thelibyaguide.com/is-libya-safe',
+    url: 'https://thelibyaguide.com/is-libya-safe',
+    headline: H1,
+    description: metadata.description,
+    dateModified: logistics.lastEditorialReview,
+    inLanguage: 'en',
+    image: 'https://thelibyaguide.com/images/sights/leptis-magna.jpg',
+    author: { '@id': 'https://thelibyaguide.com/#org' },
+    publisher: { '@id': 'https://thelibyaguide.com/#org' },
+    about: { '@type': 'Country', name: 'Libya' },
+    citation: logistics.advisories.map((a) => a.url),
+  };
   return (
     <>
+      <JsonLd data={jsonLd} />
       <section className="border-b border-line bg-card/60">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <Eyebrow>The Reality Index</Eyebrow>
           <h1 className="mt-3 max-w-4xl font-display text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] text-balance">
-            The warnings are real. So is the country behind them.
+            {H1}
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted text-pretty">
             Western advisories rate Libya at their highest level. We summarise them faithfully, with dates and links.
             Then we set out how licensed, escorted tourism operates inside that risk, and what you can check for
             yourself. We don&apos;t claim the risk is zero. We claim it is specific, and that specific risks can be
             managed or avoided.
+          </p>
+          <p className="mt-4 text-sm text-muted">
+            Last reviewed <time dateTime={logistics.lastEditorialReview}>{formatDate(logistics.lastEditorialReview)}</time>{' '}
+            by The Libya Guide editors. We don&apos;t sell tours.
           </p>
 
           <div className="mt-12 grid gap-5 md:grid-cols-2">
@@ -59,7 +83,7 @@ export default function RealityIndexPage() {
         <SectionHeading
           id="index-h"
           eyebrow="Side by side"
-          title="Six claims, six answers, six things to check."
+          title="Six claims, six answers, six things to check"
           lede="Column three is the point. Nothing here asks for your trust: every line is something you can confirm with your operator, your insurer or a primary source."
         />
         <div className="mt-12">

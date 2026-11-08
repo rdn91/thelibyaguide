@@ -7,6 +7,7 @@ import { cuisine, sights } from '@/lib/utils';
 export const metadata: Metadata = {
   title: 'Photo credits & sources',
   description: 'Every photograph on The Libya Guide, with its photographer, licence and Wikimedia Commons source.',
+  alternates: { canonical: '/credits' },
 };
 
 const ACACUS: ImageCredit = {
@@ -29,6 +30,7 @@ export default function CreditsPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <SectionHeading
+        as="h1"
         eyebrow="Credits"
         title="Photographs & sources"
         lede="Every photograph comes from Wikimedia Commons under an open licence. Where the licence is CC BY or CC BY-SA, adapted versions are shared under the same terms."

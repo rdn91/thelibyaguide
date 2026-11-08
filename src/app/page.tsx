@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import HeroSlider, { type HeroSlide } from '@/components/interactive/HeroSlider';
@@ -31,13 +32,15 @@ function slides(): HeroSlide[] {
 
 const FEATURED = ['leptis-magna', 'cyrene', 'tadrart-acacus', 'ghadames', 'sabratha'] as const;
 
+export const metadata: Metadata = { alternates: { canonical: '/' } };
+
 export default function HomePage() {
   const [lead, ...rest] = FEATURED.map((s) => getSight(s)!);
   const us = logistics.advisories.find((a) => a.id === 'us')!;
 
   return (
     <>
-      <HeroSlider slides={slides()} />
+      <HeroSlider slides={slides()} trust={{ advisoryAsOf: us.asOf, reviewed: logistics.lastEditorialReview }} />
 
       {/* Editorial sights */}
       <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32" aria-labelledby="sights-h">
@@ -45,8 +48,8 @@ export default function HomePage() {
           <SectionHeading
             id="sights-h"
             eyebrow="Five to start with"
-            title="Rome, Greece and the Sahara — without the queue."
-            lede="Libya holds five UNESCO World Heritage Sites. In most of them, on most days, you will share the stones with a guard, a guide and the wind."
+            title="Rome, Greece and the Sahara, without the queue"
+            lede="Libya has five UNESCO World Heritage Sites. Few foreign tourists reach them, and on most days the sites are quiet."
           />
           <ButtonLink href="/destinations" variant="secondary" className="shrink-0 self-start lg:self-end">
             All 30 sights <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
@@ -110,7 +113,7 @@ export default function HomePage() {
                 Every claim in Western advisories set beside how escorted tourism actually works here — and what you can
                 check for yourself before you pay a deposit.
               </p>
-              <ButtonLink href="/travel-advisory-debunked" variant="inverse" size="lg" className="mt-8">
+              <ButtonLink href="/is-libya-safe" variant="inverse" size="lg" className="mt-8">
                 Open the Reality Index <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
               </ButtonLink>
             </div>
@@ -154,7 +157,7 @@ export default function HomePage() {
         <SectionHeading
           id="corridor-h"
           eyebrow="The Guided Corridor Protocol"
-          title="Three tiers. One rule: you never travel alone."
+          title="Three tiers, one rule: you never travel alone"
           lede="How this guide classifies access. It's an editorial model built from how licensed operators work today, not an official government zoning."
         />
         <ol className="mt-12 grid gap-5 md:grid-cols-3">
@@ -190,14 +193,14 @@ export default function HomePage() {
           />
           <div className="p-6 sm:p-8">
             <Eyebrow>Taste & culture</Eyebrow>
-            <h3 className="mt-2 font-display text-3xl group-hover:text-sea">Bazeen on Friday, tea in three glasses.</h3>
-            <p className="mt-3 text-muted">Seven dishes, the tea ritual, and the table manners that open doors.</p>
+            <h3 className="mt-2 font-display text-3xl group-hover:text-sea">Bazeen on Friday, tea in three glasses</h3>
+            <p className="mt-3 text-muted">Seven dishes, the tea ritual and the table manners to know.</p>
           </div>
         </Link>
         <Link href="/local" className="group flex flex-col justify-between overflow-hidden rounded-3xl bg-olive p-6 text-inverse sm:p-8">
           <div>
-            <Eyebrow className="text-[#e6cfa9]">For residents · Phase 2</Eyebrow>
-            <h3 className="mt-2 font-display text-3xl">Local weekends & where to find your stuff.</h3>
+            <Eyebrow className="text-[#e6cfa9]">For locals</Eyebrow>
+            <h3 className="mt-2 font-display text-3xl">Local weekends and where to shop</h3>
             <p className="mt-3 max-w-md text-inverse/80">
               Day trips from Tripoli and Benghazi, Friday-lunch etiquette, and the market clusters worth the drive.
             </p>

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Taste & culture — bazeen, mbakbka, tea and etiquette',
   description:
     "Libya's signature dishes, the three-glass tea ritual, where to eat, and the table manners and customs that matter to visitors.",
+  alternates: { canonical: '/taste-culture' },
 };
 
 function Heat({ level }: { level: number }) {

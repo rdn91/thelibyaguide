@@ -37,7 +37,7 @@ export default function StatusBoard({ items, dark = false }: { items: StatusItem
                     </p>
                   </div>
                 </div>
-                <Badge tone={s.tone} dot pulse={item.status === 'operating'}>
+                <Badge tone={s.tone} dot>
                   {s.label}
                 </Badge>
               </div>

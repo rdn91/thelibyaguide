@@ -22,13 +22,11 @@ const DOTS: Partial<Record<Tone, string>> = {
 export function Badge({
   tone = 'neutral',
   dot,
-  pulse,
   className,
   children,
 }: {
   tone?: Tone;
   dot?: boolean;
-  pulse?: boolean;
   className?: string;
   children: ReactNode;
 }) {
@@ -41,10 +39,7 @@ export function Badge({
       )}
     >
       {dot && (
-        <span className="relative flex size-1.5" aria-hidden>
-          {pulse && <span className={cn('absolute inset-0 animate-ping rounded-full opacity-60', DOTS[tone])} />}
-          <span className={cn('relative size-1.5 rounded-full', DOTS[tone] ?? 'bg-current')} />
-        </span>
+        <span className={cn('size-1.5 rounded-full', DOTS[tone] ?? 'bg-current')} aria-hidden />
       )}
       {children}
     </span>
