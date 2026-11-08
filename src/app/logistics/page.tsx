@@ -1,92 +1,136 @@
-'use client';
+import type { Metadata } from 'next';
+import { ArrowUpRight, Check } from 'lucide-react';
+import CanIVisitChecker from '@/components/interactive/CanIVisitChecker';
+import InteractiveCorridorMap from '@/components/interactive/InteractiveCorridorMap';
+import StatusBoard from '@/components/interactive/StatusBoard';
+import { Badge } from '@/components/ui/Badge';
+import { Eyebrow, SectionHeading } from '@/components/ui/Card';
+import { logistics, sights } from '@/lib/utils';
 
-import React from 'react';
-import Link from 'next/link';
-import { useLanguage } from '@/context/LanguageContext';
-import { FileText, Building2, HeartHandshake, ArrowRight, ArrowLeft, Compass } from 'lucide-react';
+export const metadata: Metadata = {
+  title: 'Libya tourist e-Visa, LOI & entry logistics',
+  description:
+    'How the Libyan tourist e-Visa works: operator sponsorship, the Letter of Invitation, entry airports and borders, the Guided Corridor Protocol, and a 4-step readiness check.',
+  alternates: { canonical: '/logistics' },
+};
 
-export default function LogisticsHubPage() {
-  const { language, isRtl } = useLanguage();
-  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
-
-  const sections = [
-    {
-      titleEn: 'Step-by-Step eVisa & Eligibility Calculator',
-      titleAr: 'دليل التأشيرة الإلكترونية evisa.gov.ly واختبار الأهلية',
-      descEn: 'Check passport criteria, avoid Israeli stamp restrictions, and understand the 5-step statutory workflow to enter Libya.',
-      descAr: 'تحقق من شروط الجواز، وتجنب قيود الأختام، وافهم الخطوات الخمس الرسمية للحصول على التأشيرة الإلكترونية.',
-      href: '/logistics/evisa-step-by-step',
-      icon: FileText,
-      color: 'amber'
-    },
-    {
-      titleEn: 'Verified Tour Operators Directory',
-      titleAr: 'دليل وكالات السياحة والسفر المعتمدة رسمياً',
-      descEn: 'Connect with accredited Libyan agencies for mandatory tour sponsorship, Letters of Invitation (LOI), and transparent pricing.',
-      descAr: 'تواصل مع وكالات مرخصة رسمياً لإصدار خطابات الدعوة وتأشيرة الدخول ومرافقة المرشدين المعتمدين.',
-      href: '/logistics/verified-agencies',
-      icon: Building2,
-      color: 'emerald'
-    },
-    {
-      titleEn: 'Culture, Customs & Regulatory Etiquette',
-      descEn: 'Ground truth advice on the cash-based economy (LYD), drone/photography rules, dress codes, and tea hospitality traditions.',
-      titleAr: 'العادات والتقاليد والأنظمة القانونية',
-      descAr: 'إرشادات عملية حول الاقتصاد النقدي (كاش)، وقوانين الدرون والتصوير، واللباس المعتدل، وطقوس الشاي والضيافة.',
-      href: '/logistics/customs-and-culture',
-      icon: HeartHandshake,
-      color: 'sky'
-    }
-  ];
-
+export default function LogisticsPage() {
+  const { visa } = logistics;
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
-      {/* Page Header */}
-      <div className="space-y-4 max-w-3xl">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-semibold">
-          <Compass className="w-4 h-4" />
-          <span>{language === 'ar' ? 'المركز اللوجستي للمسافرين' : 'International Logistics Hub'}</span>
-        </div>
-        <h1 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
-          {language === 'ar' ? 'الدليل اللوجستي للسفر إلى ليبيا' : 'Libya Travel Logistics & Intelligence'}
+    <>
+      <section className="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+        <Eyebrow>Visa & logistics</Eyebrow>
+        <h1 className="mt-3 max-w-4xl font-display text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1.02] text-balance">
+          No operator, no visa. Start there.
         </h1>
-        <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
-          {language === 'ar'
-            ? 'كل ما يحتاجه المسافر الدولي من معلومات نظامية: كيفية استخراج التأشيرة، اختيار وكالة سياحية معتمدة، وقوانين الصرف والتصوير.'
-            : 'Clear, transparent answers to every regulatory and operational question before booking your journey to North Africa.'}
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted text-pretty">
+          Tourist entry to Libya is sponsored. A licensed Libyan operator requests security clearance, issues your
+          Letter of Invitation and lodges the e-Visa. Everything else follows from that choice.
         </p>
-      </div>
+      </section>
 
-      {/* Grid of Logistics Hub Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {sections.map((sec, idx) => {
-          const Icon = sec.icon;
-          return (
-            <Link
-              key={idx}
-              href={sec.href}
-              className="p-8 rounded-3xl bg-slate-900 border border-white/10 hover:border-amber-400/40 transition-all flex flex-col justify-between space-y-6 shadow-xl group hover:-translate-y-1"
-            >
-              <div className="space-y-4">
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Icon className="w-6 h-6" />
+      <section className="mx-auto mt-16 grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_24rem] lg:px-8" aria-labelledby="visa-h">
+        <div>
+          <h2 id="visa-h" className="sr-only">
+            e-Visa steps
+          </h2>
+          <ol className="space-y-8">
+            {visa.steps.map((s, i) => (
+              <li key={s.title} className="flex gap-5">
+                <span className="flex size-9 shrink-0 items-center justify-center rounded-full bg-sea font-display text-inverse">
+                  {i + 1}
+                </span>
+                <div>
+                  <h3 className="font-display text-2xl">{s.title}</h3>
+                  <p className="mt-2 max-w-2xl leading-relaxed text-ink/85">{s.body}</p>
                 </div>
-                <h2 className="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
-                  {language === 'ar' ? sec.titleAr : sec.titleEn}
-                </h2>
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                  {language === 'ar' ? sec.descAr : sec.descEn}
-                </p>
-              </div>
+              </li>
+            ))}
+          </ol>
+          <p className="mt-10 rounded-2xl bg-permit-soft p-5 text-sm leading-relaxed text-permit-ink">{visa.caveat}</p>
+        </div>
+        <aside className="rounded-2xl border border-line bg-white p-6 shadow-card lg:self-start">
+          <h3 className="font-display text-xl">Before you apply</h3>
+          <ul className="mt-4 space-y-3">
+            {visa.requirements.map((r) => (
+              <li key={r} className="flex gap-3 text-sm leading-relaxed">
+                <Check className="mt-0.5 size-4 shrink-0 text-open" aria-hidden />
+                {r}
+              </li>
+            ))}
+          </ul>
+          <a
+            href={visa.portal}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-sea hover:underline"
+          >
+            Official portal: evisa.gov.ly <ArrowUpRight className="size-4" aria-hidden />
+          </a>
+        </aside>
+      </section>
 
-              <div className="pt-4 border-t border-white/10 flex items-center gap-1.5 text-xs font-bold text-amber-400 group-hover:underline">
-                <span>{language === 'ar' ? 'عرض التفاصيل' : 'Explore Guide'}</span>
-                <ArrowIcon className="w-4 h-4" />
-              </div>
-            </Link>
-          );
-        })}
-      </div>
-    </div>
+      <section id="checker" className="mx-auto max-w-5xl scroll-mt-24 px-4 py-24 sm:px-6 lg:px-8" aria-labelledby="checker-h">
+        <SectionHeading
+          id="checker-h"
+          eyebrow="Can I visit Libya?"
+          title="Four steps to a straight answer"
+          lede="Passport, visa timing, itinerary and operator. The checker runs in your browser and sends nothing anywhere."
+        />
+        <div className="mt-10">
+          <CanIVisitChecker />
+        </div>
+      </section>
+
+      <section id="corridor" className="scroll-mt-24 bg-card/60" aria-labelledby="corridor-h">
+        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
+          <SectionHeading
+            id="corridor-h"
+            eyebrow="The Guided Corridor Protocol"
+            title="Where tourism runs, and how"
+            lede="An editorial classification drawn from how licensed operators work today. It is not an official government zoning, and it does not override any advisory."
+          />
+          <div className="mt-10">
+            <InteractiveCorridorMap routes={logistics.routes} sights={sights} />
+          </div>
+          <ol className="mt-10 grid gap-5 md:grid-cols-3">
+            {logistics.corridor.map((c) => (
+              <li key={c.tier} className="rounded-2xl border border-line bg-white p-6">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <h3 className="font-display text-xl">
+                    <span className="text-muted">{c.tier} · </span>
+                    {c.name}
+                  </h3>
+                  <Badge tone={c.tone} dot>
+                    {c.badge}
+                  </Badge>
+                </div>
+                <p className="mt-4 text-sm leading-relaxed text-muted">{c.covers.join(' · ')}</p>
+                <ul className="mt-5 space-y-2 border-t border-line pt-5">
+                  {c.rules.map((r) => (
+                    <li key={r} className="flex gap-2 text-sm">
+                      <span className="mt-2 size-1 shrink-0 rounded-full bg-ink" aria-hidden />
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8" aria-labelledby="entry-h">
+        <SectionHeading
+          id="entry-h"
+          eyebrow="Getting in"
+          title="Airports and land borders"
+          lede="Tripoli International has been closed since 2014. Mitiga is the capital's working airport, and most visitors fly in via Istanbul, Tunis, Cairo or Amman."
+        />
+        <div className="mt-10">
+          <StatusBoard items={logistics.statusBoard} />
+        </div>
+      </section>
+    </>
   );
 }

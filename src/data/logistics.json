@@ -1,0 +1,174 @@
+{
+  "lastEditorialReview": "2026-11-08",
+  "advisories": [
+    {
+      "id": "us",
+      "issuer": "US Department of State",
+      "rating": "Level 4 — Do Not Travel",
+      "summary": "Advises against travel to Libya for any reason, citing crime, terrorism, unexploded landmines, civil unrest, kidnapping, armed conflict and health risks.",
+      "consular": "There is no US Embassy in Libya. Routine services run through the US Embassy in Tunis, and the US government cannot provide emergency services inside Libya.",
+      "url": "https://travel.state.gov/en/international-travel/travel-advisories/libya.html",
+      "asOf": "2026-08-31"
+    },
+    {
+      "id": "uk",
+      "issuer": "UK Foreign, Commonwealth & Development Office",
+      "rating": "Against all travel to most of Libya",
+      "summary": "Advises against all travel to most of the country, including Sabratha, Leptis Magna, the Nafusa mountains, Ghadames and all of the south. Tripoli, Misrata and Benghazi with the Jebel Akhdar are rated 'all but essential travel'. Read the live regional breakdown before planning.",
+      "consular": "Travelling against FCDO advice can invalidate standard travel insurance.",
+      "url": "https://www.gov.uk/foreign-travel-advice/libya",
+      "asOf": "2026-07-21"
+    },
+    {
+      "id": "ca",
+      "issuer": "Global Affairs Canada",
+      "rating": "Avoid all travel",
+      "summary": "Advises against all travel to Libya. Travel outside Tripoli needs prior authorisation from the Libyan authorities, and checkpoints may otherwise refuse passage. Land borders can close at short notice.",
+      "consular": "Canada has no embassy in Libya, so consular help is very limited.",
+      "url": "https://travel.gc.ca/destinations/libya",
+      "asOf": "2026-05-26"
+    }
+  ],
+  "realityIndex": [
+    {
+      "id": "blanket",
+      "topic": "One US rating for the whole country",
+      "advisory": "Level 4 applies to all 1.76 million km² of Libya, from Tripoli's old city to the Chad border.",
+      "ground": "Leisure tourism uses a small, repeatable set of routes: the Tripolitanian coast, the Nafusa escarpment, the Green Mountain of Cyrenaica and a few licensed desert circuits. Itineraries are registered in advance and change when conditions change. Note that the UK does split the map, and most of these routes still sit in its 'against all travel' band.",
+      "verify": [
+        { "label": "Compare the FCDO regional map — it already distinguishes areas", "url": "https://www.gov.uk/foreign-travel-advice/libya/regional-risks" },
+        { "label": "Ask any operator for the routes they have stopped running, and why" }
+      ]
+    },
+    {
+      "id": "kidnap",
+      "topic": "Kidnapping",
+      "advisory": "Kidnapping is described as widespread, and victims have included US citizens.",
+      "ground": "Foreign visitors do not roam independently. A licensed guide and driver stay with the group from the airport onward, hotels are chosen by the operator, and a tourism-police officer often travels with the group. This reduces exposure. It does not remove the risk.",
+      "verify": [
+        { "label": "Ask the operator, in writing, for their incident history and escalation plan" },
+        { "label": "Confirm your insurer names Libya on the policy, including kidnap & ransom if you need it" }
+      ]
+    },
+    {
+      "id": "consular",
+      "topic": "No embassy to call",
+      "advisory": "No US embassy operates in Libya, and emergency consular help is not available.",
+      "ground": "Your operator is your first responder. Serious operators carry evacuation arrangements and will show you how a medical or security evacuation would actually work.",
+      "verify": [
+        { "label": "Buy specialist high-risk travel and medical-evacuation cover" },
+        { "label": "Register the trip with your foreign ministry where that service exists" }
+      ]
+    },
+    {
+      "id": "flights",
+      "topic": "Airports may close at short notice",
+      "advisory": "Air travel can be suspended with little warning.",
+      "ground": "Since Tripoli International closed in 2014, Mitiga (MJI) has been the capital's working airport. Benina (BEN) in Benghazi and Misrata (MRA) also take commercial flights. Build a buffer day at each end and buy changeable tickets.",
+      "verify": [
+        { "label": "Check this week's departures on a flight tracker before booking" },
+        { "label": "Prefer airlines that rebook rather than refund-only" }
+      ]
+    },
+    {
+      "id": "uxo",
+      "topic": "Landmines and unexploded ordnance",
+      "advisory": "Unexploded landmines and ordnance remain in former conflict areas.",
+      "ground": "Heritage sites on tourist routes have been visited for years, but former front lines — parts of southern Tripoli and around Sirte — stay off itineraries. Off-road desert driving is done by experienced local crews on known tracks.",
+      "verify": [
+        { "label": "Read the UN Mine Action Service country page", "url": "https://unmas.org/en/node/132489" }
+      ]
+    },
+    {
+      "id": "unrest",
+      "topic": "Civil unrest and armed clashes",
+      "advisory": "Armed clashes can break out without warning, including in Tripoli.",
+      "ground": "This is real: Tripoli saw heavy clashes in May 2025, fighting near Zawiya shut the refinery in May 2026, and in February 2026 a tour group returning from Leptis Magna passed a roadside gunfight. Responsible operators pause or reroute when tension rises, and you should expect occasional cancellations. Plan around them rather than through them.",
+      "verify": [
+        { "label": "Read the operator's cancellation and refund terms before paying" },
+        { "label": "Follow local news for the week before departure" }
+      ]
+    }
+  ],
+  "heritageFact": {
+    "label": "Four of Libya's five UNESCO World Heritage Sites — Leptis Magna, Sabratha, Cyrene and Tadrart Acacus — have been on the List of World Heritage in Danger since 2016. Ghadames was removed from that list in July 2025.",
+    "url": "https://whc.unesco.org/en/statesparties/ly"
+  },
+  "statusBoard": [
+    { "id": "mji", "name": "Mitiga International", "code": "MJI", "kind": "airport", "status": "operating", "note": "Tripoli's working airport since 2014. Direct flights from Rome (ITA Airways since September 2026, and Aeroitalia), plus connections via Istanbul, Tunis, Cairo and Amman.", "lastVerified": null },
+    { "id": "ben", "name": "Benina International", "code": "BEN", "kind": "airport", "status": "operating", "note": "Main gateway for Cyrene, Apollonia and the Green Mountain.", "lastVerified": null },
+    { "id": "mra", "name": "Misrata International", "code": "MRA", "kind": "airport", "status": "operating", "note": "Alternative entry for Tripolitania; under two hours by road from Leptis Magna.", "lastVerified": null },
+    { "id": "ras-ajdir", "name": "Ras Ajdir border (Tunisia)", "code": "RAJ", "kind": "border", "status": "check", "note": "Main land crossing from Tunisia. It has closed for weeks at a time, most recently in 2024. Visa on arrival at land borders was suspended in June 2026. Cross only with your operator's confirmation on the day.", "lastVerified": null },
+    { "id": "coastal-road", "name": "Coastal highway, Zuwara–Misrata", "code": "RD1", "kind": "road", "status": "operating", "note": "Busy, paved and lined with frequent checkpoints. Your guide carries the itinerary paperwork for each stop.", "lastVerified": null },
+    { "id": "evisa", "name": "Tourist e-Visa issuance", "code": "VSA", "kind": "visa", "status": "check", "note": "Processing times reported by travellers range from days to several weeks. Budget at least 4–6 weeks. Visa on arrival was suspended in June 2026, so arrange the e-Visa before you fly.", "lastVerified": null }
+  ],
+  "visa": {
+    "portal": "https://evisa.gov.ly",
+    "requirements": [
+      "Passport valid for at least 6 months beyond your departure date, with blank pages",
+      "Israeli passports are not accepted, and Israeli stamps or entry marks may lead to refusal",
+      "Sponsorship by a licensed Libyan tour operator, which issues the Letter of Invitation (LOI)",
+      "A registered itinerary — tourist visas are tied to it",
+      "A separate entry permit for Benghazi and eastern Libya, often not included in tour prices",
+      "Police registration within 7 days of arrival, usually done by your operator",
+      "Cash only: exporting Libyan dinars is illegal, and foreign cash over US$10,000 must be declared"
+    ],
+    "steps": [
+      { "title": "Choose a licensed operator", "body": "Tourist visas are sponsored. Pick an operator first and agree the route, the dates and who guides you." },
+      { "title": "Security clearance and LOI", "body": "Send a clear passport scan and photo. The operator submits them for clearance and issues your Letter of Invitation." },
+      { "title": "e-Visa issued", "body": "The e-Visa is issued through the official portal, usually lodged by the operator. Print it and keep a PDF offline. Use only the official portal — look-alike sites charge extra fees." },
+      { "title": "Arrival", "body": "Your guide meets you before immigration or just after it. The visa is checked against the LOI, and from here you travel with the operator." }
+    ],
+    "caveat": "Fees, processing times and nationality rules change without notice, and third-party visa sites often contradict each other. Treat your operator and the official portal as the only sources of truth."
+  },
+  "corridor": [
+    {
+      "tier": "A",
+      "name": "Coastal & city corridor",
+      "badge": "Licensed guide",
+      "tone": "open",
+      "covers": ["Tripoli old city", "Sabratha", "Leptis Magna", "Nafusa escarpment", "Ghadames", "Benghazi", "Cyrene, Apollonia & Ptolemais", "Green Mountain"],
+      "rules": ["Licensed guide present at all times", "Itinerary registered before arrival", "Daylight road travel", "Hotels selected by the operator", "Eastern sites need an extra entry permit"]
+    },
+    {
+      "tier": "B",
+      "name": "Saharan expedition corridor",
+      "badge": "Permit + escort",
+      "tone": "permit",
+      "covers": ["Ubari sand sea & lakes", "Tadrart Acacus", "Wadi Mathendous (rarely offered)", "Murzuk (rarely offered)"],
+      "rules": ["Additional desert permits", "Minimum two vehicles", "Satellite communications", "Experienced local desert crew", "Domestic flight or long overland transfer"]
+    },
+    {
+      "tier": "C",
+      "name": "Not offered",
+      "badge": "Closed to tourism",
+      "tone": "closed",
+      "covers": ["Southern borders with Chad, Niger, Sudan and Algeria", "Tibesti", "Former front lines around Sirte"],
+      "rules": ["No licensed itineraries", "Do not attempt independently"]
+    }
+  ],
+  "routes": [
+    { "id": "west-coast", "tier": "A", "label": "Ras Ajdir – Tripoli – Misrata", "points": [[33.15, 11.56], [32.93, 12.08], [32.79, 12.48], [32.89, 13.18], [32.65, 14.26], [32.38, 15.09]] },
+    { "id": "nafusa", "tier": "A", "label": "Tripoli – Gharyan – Nalut", "points": [[32.89, 13.18], [32.17, 13.02], [32.07, 12.53], [31.97, 12.03], [31.84, 11.34], [31.87, 10.98]] },
+    { "id": "green-mountain", "tier": "A", "label": "Benghazi – Cyrene – Derna", "points": [[32.12, 20.07], [32.53, 20.57], [32.71, 20.95], [32.76, 21.75], [32.82, 21.86], [32.9, 21.97], [32.76, 22.64]] },
+    { "id": "ghadames", "tier": "A", "label": "Nalut – Ghadames", "points": [[31.87, 10.98], [30.13, 9.5]] },
+    { "id": "fezzan", "tier": "B", "label": "Sebha – Ubari – Ghat – Acacus", "points": [[27.04, 14.43], [26.55, 13.07], [26.59, 12.78], [24.96, 10.17], [24.83, 10.33]] },
+    { "id": "air-east", "tier": "air", "label": "Flight Tripoli – Benghazi", "points": [[32.89, 13.18], [32.12, 20.07]] },
+    { "id": "air-south", "tier": "air", "label": "Flight Tripoli – Sebha", "points": [[32.89, 13.18], [27.04, 14.43]] }
+  ],
+  "operatorChecklist": [
+    "Holds a current Ministry of Tourism licence — ask for the number and a copy",
+    "Can issue the LOI itself rather than through an unnamed intermediary",
+    "Names the guide in advance, and the guide holds a tourism-police registration",
+    "Gives a written evacuation and incident plan",
+    "Publishes cancellation and refund terms that cover security pauses",
+    "Has references from travellers in the last 12 months that you can contact directly"
+  ],
+  "passports": [
+    { "id": "us", "label": "United States", "advisory": "us", "note": "Level 4 — no embassy and no emergency services. US passport holders can legally travel, but are on their own if something goes wrong." },
+    { "id": "uk", "label": "United Kingdom", "advisory": "uk", "note": "FCDO advises against all travel to most of Libya. Check whether your planned cities sit in the 'all travel' or 'all but essential' bands." },
+    { "id": "eu", "label": "EU / Schengen", "advisory": null, "note": "Most EU foreign ministries advise against travel. Check your own ministry's page — Italy and Malta have the most active consular links." },
+    { "id": "other", "label": "Another nationality", "advisory": null, "note": "Check your foreign ministry's advisory and whether your nationality is currently eligible for the tourist e-Visa." },
+    { "id": "il", "label": "Israel", "advisory": null, "note": "Israeli passports are not accepted for entry to Libya.", "blocked": true }
+  ]
+}

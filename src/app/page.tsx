@@ -1,344 +1,220 @@
-'use client';
-
-import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
-import { useLanguage } from '@/context/LanguageContext';
-import { destinations } from '@/data/destinations';
-import { operators } from '@/data/operators';
-import RealityCounter from '@/components/RealityCounter';
-import DestinationCard from '@/components/DestinationCard';
-import InteractiveMap from '@/components/InteractiveMap';
-import { 
-  ShieldCheck, 
-  MapPin, 
-  Compass, 
-  Sparkles, 
-  ArrowRight, 
-  ArrowLeft, 
-  Calendar, 
-  Landmark,
-  Building2
-} from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import HeroSlider, { type HeroSlide } from '@/components/interactive/HeroSlider';
+import StatusBoard from '@/components/interactive/StatusBoard';
+import { Badge } from '@/components/ui/Badge';
+import { ButtonLink } from '@/components/ui/Button';
+import { Eyebrow, SectionHeading } from '@/components/ui/Card';
+import { SightImage } from '@/components/ui/SightImage';
+import type { ImageCredit } from '@/lib/types';
+import { CATEGORY_LABELS, REGION_LABELS, cuisine, formatDate, getSight, logistics } from '@/lib/utils';
+
+const ACACUS_ARCH: ImageCredit = {
+  src: '/images/sights/hero-acacus.jpg',
+  width: 2000,
+  height: 1333,
+  author: 'Luca Galuzzi (Lucag)',
+  license: 'CC BY-SA 2.5',
+  licenseUrl: 'https://creativecommons.org/licenses/by-sa/2.5',
+  sourceUrl: 'https://commons.wikimedia.org/wiki/File:Libya_5101_Fozzigiaren_Arch_Tadrart_Acacus_Luca_Galuzzi_2007.jpg',
+};
+
+function slides(): HeroSlide[] {
+  const leptis = getSight('leptis-magna')!;
+  const waw = getSight('waw-an-namus')!;
+  return [
+    { image: leptis.image!, place: 'Leptis Magna, Al Khums', placeAr: 'لبدة الكبرى، الخمس', href: '/destinations/leptis-magna' },
+    { image: ACACUS_ARCH, place: 'Fozzigiaren Arch, Tadrart Acacus', placeAr: 'قوس أفازجار، أكاكوس', href: '/destinations/tadrart-acacus' },
+    { image: waw.image!, place: 'Waw an Namus crater, Fezzan', placeAr: 'واو الناموس، فزان', href: '/destinations/waw-an-namus' },
+  ];
+}
+
+const FEATURED = ['leptis-magna', 'cyrene', 'tadrart-acacus', 'ghadames', 'sabratha'] as const;
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 export default function HomePage() {
-  const { language, t, isRtl } = useLanguage();
-  const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
-
-  const featuredDestinations = destinations.slice(0, 6);
+  const [lead, ...rest] = FEATURED.map((s) => getSight(s)!);
+  const us = logistics.advisories.find((a) => a.id === 'us')!;
 
   return (
-    <div className="space-y-16 pb-20">
-      {/* HERO SECTION */}
-      <section className="relative min-h-[85vh] flex items-center justify-center pt-8 pb-16 overflow-hidden">
-        {/* Background Visuals with Gradients */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center -z-10 scale-105 transform opacity-35 transition-transform duration-1000 ease-out"
-          style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1548625361-195fe578716b?q=80&w=1920&auto=format&fit=crop')`
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/75 to-transparent -z-10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#090d16]/80 via-transparent to-[#090d16] -z-10" />
+    <>
+      <HeroSlider slides={slides()} trust={{ advisoryAsOf: us.asOf, reviewed: logistics.lastEditorialReview }} />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-          {/* Ground Truth Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/25 text-amber-300 text-xs sm:text-sm font-semibold backdrop-blur-md animate-in fade-in">
-            <Sparkles className="w-4 h-4 text-amber-400" />
-            <span>{t.heroBadge}</span>
-          </div>
-
-          {/* Cinematic Bilingual Headline */}
-          <div className="max-w-4xl mx-auto space-y-4">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white leading-[1.15]">
-              <span>{t.heroTitlePart1}</span>{' '}
-              <span className="bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 bg-clip-text text-transparent underline decoration-amber-500/40 decoration-wavy decoration-from-font">
-                {t.heroTitleHighlight}
-              </span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
-              {t.heroSubtitle}
-            </p>
-          </div>
-
-          {/* Action CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Link
-              href="/destinations"
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-sm tracking-wide shadow-xl shadow-amber-500/20 transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
-            >
-              <Compass className="w-5 h-5 stroke-[2.2]" />
-              <span>{t.heroCtaDestinations}</span>
-            </Link>
-
-            <Link
-              href="/logistics/evisa-step-by-step"
-              className="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-bold text-sm tracking-wide backdrop-blur-md transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
-            >
-              <ShieldCheck className="w-5 h-5 text-emerald-400" />
-              <span>{t.heroCtaEligibility}</span>
-            </Link>
-
-            <Link
-              href="/reality-check"
-              className="w-full sm:w-auto px-6 py-4 rounded-2xl text-slate-300 hover:text-white font-semibold text-sm transition-colors flex items-center justify-center gap-1.5"
-            >
-              <span>{t.heroCtaRealityCheck}</span>
-              <ArrowIcon className="w-4 h-4 text-amber-400" />
-            </Link>
-          </div>
-
-          {/* Quick Key Pillars Ticker */}
-          <div className="pt-8 max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3 text-start">
-            <div className="p-3 rounded-xl bg-slate-950/60 border border-white/10 backdrop-blur-sm">
-              <span className="text-[10px] text-amber-400 uppercase font-bold tracking-wider block">
-                {language === 'ar' ? 'التأشيرة' : 'eVisa Status'}
-              </span>
-              <span className="text-xs text-slate-200 font-semibold mt-0.5 block">
-                {language === 'ar' ? 'بوابة إلكترونية نشطة' : 'Official evisa.gov.ly'}
-              </span>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-950/60 border border-white/10 backdrop-blur-sm">
-              <span className="text-[10px] text-emerald-400 uppercase font-bold tracking-wider block">
-                {language === 'ar' ? 'الممر الساحلي' : 'Coastal Safety'}
-              </span>
-              <span className="text-xs text-slate-200 font-semibold mt-0.5 block">
-                {language === 'ar' ? 'مؤمن ومفتوح 100%' : '100% Clear Zone 1'}
-              </span>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-950/60 border border-white/10 backdrop-blur-sm">
-              <span className="text-[10px] text-sky-400 uppercase font-bold tracking-wider block">
-                {language === 'ar' ? 'رحلات الطيران' : 'Transit Access'}
-              </span>
-              <span className="text-xs text-slate-200 font-semibold mt-0.5 block">
-                {language === 'ar' ? 'مباشر من إسطنبول وتونس' : 'Direct IST, TUN, CAI'}
-              </span>
-            </div>
-            <div className="p-3 rounded-xl bg-slate-950/60 border border-white/10 backdrop-blur-sm">
-              <span className="text-[10px] text-purple-400 uppercase font-bold tracking-wider block">
-                {language === 'ar' ? 'الآثار' : 'Heritage'}
-              </span>
-              <span className="text-xs text-slate-200 font-semibold mt-0.5 block">
-                {language === 'ar' ? 'أكبر مدن روما بلا زحام' : 'Pompeii Scale / 0 Crowds'}
-              </span>
-            </div>
-          </div>
+      {/* Editorial sights */}
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32" aria-labelledby="sights-h">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <SectionHeading
+            id="sights-h"
+            eyebrow="Five to start with"
+            title="Rome, Greece and the Sahara, without the queue"
+            lede="Libya has five UNESCO World Heritage Sites. Few foreign tourists reach them, and on most days the sites are quiet."
+          />
+          <ButtonLink href="/destinations" variant="secondary" className="shrink-0 self-start lg:self-end">
+            All 30 sights <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+          </ButtonLink>
         </div>
-      </section>
 
-      {/* DYNAMIC REALITY COUNTER */}
-      <RealityCounter />
-
-      {/* INTERACTIVE GEOSPATIAL MAP SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-wider">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>{language === 'ar' ? 'الاستكشاف الجغرافي' : 'Geospatial POI Navigator'}</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-              {language === 'ar' ? 'خريطة المعالم الأثرية والطبيعية' : 'Interactive Map of Libya'}
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-xl">
-              {language === 'ar'
-                ? 'استكشف مدن التراث العالمي، وسلاسل الجبال، ومحميات الساحل الفيروزي، وبحيرات الصحراء الكبرى.'
-                : 'Navigate UNESCO landmarks, mountain fortress granaries, flamingo lagoons, and Saharan sand lakes.'}
-            </p>
-          </div>
-
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
           <Link
-            href="/destinations"
-            className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300 transition-colors"
+            href={`/destinations/${lead.slug}`}
+            className="group relative overflow-hidden rounded-3xl sm:col-span-2 lg:col-span-6 lg:row-span-2"
           >
-            <span>{language === 'ar' ? 'عرض الفهرس الكامل' : 'Browse All 50+ Destinations'}</span>
-            <ArrowIcon className="w-4 h-4" />
+            <SightImage
+              image={lead.image}
+              alt={lead.nameEn}
+              sizes="(min-width:1024px) 58vw, 100vw"
+              className="aspect-[4/5] transition-transform duration-700 group-hover:scale-[1.02] sm:aspect-[16/10] lg:aspect-auto lg:h-full lg:min-h-[36rem]"
+              credit="none"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dark/85 via-dark/10 to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 p-6 text-inverse sm:p-8">
+              <Badge tone="inverse">UNESCO World Heritage</Badge>
+              <h3 className="mt-3 font-display text-4xl sm:text-5xl">{lead.nameEn}</h3>
+              <p className="mt-3 max-w-lg text-inverse/85">{lead.summaryEn}</p>
+            </div>
           </Link>
-        </div>
-
-        <InteractiveMap destinations={destinations} />
-      </section>
-
-      {/* FEATURED DESTINATIONS GRID */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-wider">
-              <Landmark className="w-3.5 h-3.5" />
-              <span>{language === 'ar' ? 'أبرز الوجهات' : 'Curated Landmarks'}</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-              {language === 'ar' ? 'معالم لا مثيل لها على كوكب الأرض' : 'Unrivaled Ancient & Natural Wonders'}
-            </h2>
-          </div>
-
-          <Link
-            href="/destinations"
-            className="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1"
-          >
-            <span>{language === 'ar' ? 'استعراض الكل' : 'View All'}</span>
-            <ArrowIcon className="w-4 h-4" />
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {featuredDestinations.map((dest) => (
-            <DestinationCard key={dest.id} destination={dest} />
-          ))}
-        </div>
-      </section>
-
-      {/* DOMESTIC WEEKEND TEASER SECTION */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-gradient-to-r from-amber-950/40 via-slate-900 to-slate-950 border border-amber-500/20 p-8 sm:p-12 relative overflow-hidden">
-          <div className="max-w-2xl space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold">
-              <Calendar className="w-3.5 h-3.5" />
-              <span>{t.navWeekends}</span>
-            </div>
-
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
-              {language === 'ar'
-                ? 'تخطيط عطلة الجمعة والسبت لم يعد مشتتاً عبر فيسبوك'
-                : 'Friday & Saturday Plans, Finally in One Centralized Hub'}
-            </h2>
-
-            <p className="text-sm text-slate-300 leading-relaxed">
-              {language === 'ar'
-                ? 'استمتع بدليل متجدد للشاليهات الساحلية، ومزارع الاستجمام، ومسارات صعود جبل نفوسة، ومحامص القهوة المختصة، والأسماك المشوية الطازجة في زوارة وطرابلس وبنغازي.'
-                : 'Discover curated 24-hour itineraries, fresh seafood dining at fisherman harbors, mountain troglodyte cave trips, and hip specialty coffee roasteries across Tripoli, Benghazi, Misrata, and Zuwara.'}
-            </p>
-
-            <div className="pt-4 flex flex-wrap gap-4">
-              <Link
-                href="/local-weekends"
-                className="px-6 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all"
-              >
-                {language === 'ar' ? 'افتح دليل عطلات نهاية الأسبوع' : 'Open Weekend Navigator'}
-              </Link>
-              <Link
-                href="/local-weekends"
-                className="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-semibold text-xs border border-white/10 transition-colors"
-              >
-                {language === 'ar' ? 'مسارات 24 ساعة و 48 ساعة' : '24h & 48h Itineraries'}
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* VETTED OPERATORS SPOTLIGHT */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
-          <div>
-            <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-wider">
-              <Building2 className="w-3.5 h-3.5" />
-              <span>{t.navAgencies}</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mt-1">
-              {language === 'ar' ? 'شركات السياحة المرخصة والمعتمدة' : 'Verified Tourism Operators'}
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1 max-w-xl">
-              {language === 'ar'
-                ? 'وكالات سياحية رسمية تتولى إصدار خطابات الدعوة وتأشيرات e-Visa والتأمين الميداني.'
-                : 'Accredited agencies providing legal visa sponsorship, LOIs, archaeologist escorts, and 4WD Sahara convoys.'}
-            </p>
-          </div>
-
-          <Link
-            href="/logistics/verified-agencies"
-            className="text-xs font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1"
-          >
-            <span>{language === 'ar' ? 'عرض دليل الوكالات بالكامل' : 'View Full Directory'}</span>
-            <ArrowIcon className="w-4 h-4" />
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {operators.map((op) => (
-            <div
-              key={op.id}
-              className="p-6 rounded-2xl bg-slate-900/70 border border-white/10 hover:border-amber-400/40 transition-all flex flex-col justify-between space-y-4"
+          {rest.map((s) => (
+            <Link
+              key={s.slug}
+              href={`/destinations/${s.slug}`}
+              className="group relative overflow-hidden rounded-3xl lg:col-span-3"
             >
-              <div>
-                <div className="flex items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
-                    <span className="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">
-                      {op.licenseNumber}
-                    </span>
-                  </div>
-                  <span className="text-xs font-semibold text-amber-300 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
-                    ★ {op.rating} ({op.reviewCount} {language === 'ar' ? 'تقييم' : 'reviews'})
-                  </span>
-                </div>
-
-                <h3 className="text-lg font-bold text-white mt-2">
-                  {language === 'ar' ? op.nameAr : op.nameEn}
-                </h3>
-                <p className="text-xs text-slate-400 mt-1 line-clamp-2">
-                  {language === 'ar' ? op.descriptionAr : op.descriptionEn}
+              <SightImage
+                image={s.image}
+                alt={s.nameEn}
+                sizes="(min-width:1024px) 25vw, (min-width:640px) 50vw, 100vw"
+                className="aspect-[16/10] transition-transform duration-700 group-hover:scale-[1.03] lg:aspect-auto lg:h-full"
+                credit="none"
+              />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-5 text-inverse">
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-ochre">
+                  {REGION_LABELS[s.region].en} · {CATEGORY_LABELS[s.category].en}
                 </p>
-
-                <div className="mt-3 flex flex-wrap gap-1.5">
-                  {op.specialties.slice(0, 2).map((spec, i) => (
-                    <span
-                      key={i}
-                      className="text-[11px] px-2.5 py-1 rounded-lg bg-white/5 text-slate-300 border border-white/5"
-                    >
-                      {spec}
-                    </span>
-                  ))}
-                </div>
+                <h3 className="mt-1 font-display text-2xl">{s.nameEn}</h3>
               </div>
-
-              <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                <span className="text-xs text-slate-400">
-                  {language === 'ar' ? 'المقر:' : 'HQ:'} {op.headquarters}
-                </span>
-                <a
-                  href={`https://wa.me/${op.whatsappContact.replace('+', '')}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3.5 py-1.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-bold transition-colors"
-                >
-                  WhatsApp
-                </a>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
 
-      {/* REALITY CHECK CTA BANNER */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="rounded-3xl bg-slate-900 border border-white/10 p-8 sm:p-12 text-center space-y-6 relative overflow-hidden">
-          <div className="max-w-2xl mx-auto space-y-3">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white">
-              {language === 'ar' ? 'هل تريد معرفة تفاصيل تأشيرة الدخول وإجراءات المطار؟' : 'Ready to Discover the Truth on the Ground?'}
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              {language === 'ar'
-                ? 'استخدم حاسبة الأهلية التفاعلية للحصول على دليل متكامل خطوة بخطوة للتقديم على التأشيرة الإلكترونية evisa.gov.ly.'
-                : 'Run through our 4-step eligibility tool to check passport requirements, avoid statutory restrictions, and obtain an approved Letter of Invitation.'}
-            </p>
+      {/* Reality Index teaser */}
+      <section className="bg-dark text-inverse" aria-labelledby="reality-h">
+        <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:gap-20">
+            <div>
+              <Eyebrow className="text-ochre">The Reality Index</Eyebrow>
+              <h2 id="reality-h" className="mt-3 font-display text-4xl leading-[1.05] text-balance sm:text-5xl">
+                We don&apos;t ask you to ignore the warnings. We ask you to read them closely.
+              </h2>
+              <p className="mt-6 text-lg leading-relaxed text-inverse/75">
+                Every claim in Western advisories set beside how escorted tourism actually works here — and what you can
+                check for yourself before you pay a deposit.
+              </p>
+              <ButtonLink href="/is-libya-safe" variant="inverse" size="lg" className="mt-8">
+                Open the Reality Index <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+              </ButtonLink>
+            </div>
+            <figure className="self-start rounded-3xl border border-inverse/15 p-6 sm:p-8">
+              <div className="flex flex-wrap items-center gap-3">
+                <Badge tone="closed">{us.rating}</Badge>
+                <span className="text-xs text-inverse/60">
+                  {us.issuer} · {formatDate(us.asOf)}
+                </span>
+              </div>
+              <blockquote className="mt-5 font-display text-2xl leading-snug">{us.summary}</blockquote>
+              <figcaption className="mt-6 border-t border-inverse/15 pt-5 text-sm leading-relaxed text-inverse/75">
+                <span className="font-semibold text-inverse">How tourism works around it: </span>
+                {logistics.realityIndex[1].ground}
+              </figcaption>
+              <a
+                href={us.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-1 text-sm font-semibold text-ochre hover:underline"
+              >
+                Read the original advisory <ArrowUpRight className="size-4" aria-hidden />
+              </a>
+            </figure>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/logistics/evisa-step-by-step"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-amber-500/20 transition-all"
-            >
-              {language === 'ar' ? 'فحص أهلية التأشيرة' : 'Start Visa Calculator'}
-            </Link>
-            <Link
-              href="/reality-check"
-              className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-semibold text-xs border border-white/10 transition-colors"
-            >
-              {language === 'ar' ? 'التحقق من حالة الرحلات والممرات' : 'View Transit Dashboard'}
-            </Link>
+          <div className="mt-20">
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+              <h3 className="font-display text-2xl">Entry points & routes</h3>
+              <Link href="/logistics" className="text-sm font-semibold text-ochre hover:underline">
+                Full logistics →
+              </Link>
+            </div>
+            <StatusBoard items={logistics.statusBoard} dark />
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Corridor protocol */}
+      <section className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-32" aria-labelledby="corridor-h">
+        <SectionHeading
+          id="corridor-h"
+          eyebrow="The Guided Corridor Protocol"
+          title="Three tiers, one rule: you never travel alone"
+          lede="How this guide classifies access. It's an editorial model built from how licensed operators work today, not an official government zoning."
+        />
+        <ol className="mt-12 grid gap-5 md:grid-cols-3">
+          {logistics.corridor.map((c) => (
+            <li key={c.tier} className="flex flex-col rounded-3xl border border-line bg-white p-6 shadow-card">
+              <div className="flex items-center justify-between">
+                <span className="font-display text-5xl text-line-strong" aria-hidden>
+                  {c.tier}
+                </span>
+                <Badge tone={c.tone} dot>
+                  {c.badge}
+                </Badge>
+              </div>
+              <h3 className="mt-6 font-display text-2xl">{c.name}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted">{c.covers.join(' · ')}</p>
+            </li>
+          ))}
+        </ol>
+        <ButtonLink href="/logistics#corridor" variant="ghost" className="mt-8 -ms-4">
+          See the corridor map and rules <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+        </ButtonLink>
+      </section>
+
+      {/* Taste + local bridge */}
+      <section className="mx-auto grid max-w-7xl gap-5 px-4 sm:px-6 lg:grid-cols-2 lg:px-8" aria-label="Food and local weekends">
+        <Link href="/taste-culture" className="group overflow-hidden rounded-3xl bg-card">
+          <SightImage
+            image={cuisine.dishes[0].image}
+            alt="Bazeen, Libya's barley-dough centrepiece"
+            sizes="(min-width:1024px) 50vw, 100vw"
+            className="aspect-[16/10]"
+            credit="none"
+          />
+          <div className="p-6 sm:p-8">
+            <Eyebrow>Taste & culture</Eyebrow>
+            <h3 className="mt-2 font-display text-3xl group-hover:text-sea">Bazeen on Friday, tea in three glasses</h3>
+            <p className="mt-3 text-muted">Seven dishes, the tea ritual and the table manners to know.</p>
+          </div>
+        </Link>
+        <Link href="/local" className="group flex flex-col justify-between overflow-hidden rounded-3xl bg-olive p-6 text-inverse sm:p-8">
+          <div>
+            <Eyebrow className="text-[#e6cfa9]">For locals</Eyebrow>
+            <h3 className="mt-2 font-display text-3xl">Local weekends and where to shop</h3>
+            <p className="mt-3 max-w-md text-inverse/80">
+              Day trips from Tripoli and Benghazi, Friday-lunch etiquette, and the market clusters worth the drive.
+            </p>
+          </div>
+          <ul className="mt-10 space-y-3">
+            {cuisine.local.weekendIdeas.slice(0, 3).map((w) => (
+              <li key={w.title} className="flex items-center justify-between gap-4 border-t border-inverse/20 pt-3 text-sm">
+                <span>{w.title}</span>
+                <span className="shrink-0 tabular-nums text-inverse/70">{w.drive}</span>
+              </li>
+            ))}
+          </ul>
+        </Link>
+      </section>
+    </>
   );
 }
